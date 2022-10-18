@@ -17,7 +17,13 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
+
+
+/* main {
+    height: 100%
+} */
 
 
 /* main {
@@ -58,6 +64,26 @@ ul {
 
 #container-main {
     background-color: var(--color-jace-fondo);
+    width: 70%;
+    height: auto;
+}
+
+#content-main {
+    height: 100%;
+}
+
+#scroll-right {
+    max-height: 50%;
+}
+
+
+/* 
+#publicacion .card {
+    height: 500px;
+} */
+
+#content-rigth {
+    max-width: 30%;
 }
 
 

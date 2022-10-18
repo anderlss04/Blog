@@ -1,22 +1,19 @@
-<div id="content-rigth" class="col-xl-4">
+<div id="content-rigth" class=" p-5">
     <div class="container">
-        <div class="content col-xl-9">
-            <div class="card" >
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
+        <div class="content ">
+           <h1> Reciente</h1>
+           <div calss="scroll-right" class="overflow-auto">
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident nihil non, accusamus rerum debitis laudantium voluptas vel, doloremque dolor magnam tempora laborum itaque amet fuga explicabo sapiente obcaecati? Distinctio, facilis.
+
+           </div>
         </div>
         <div class="content col-xl-9">
-            <div class="card" >
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
+            <h1>Destacado</h1>
+            
+           <div calss="scroll-right" class="overflow-auto">
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident nihil non, accusamus rerum debitis laudantium voluptas vel, doloremque dolor magnam tempora laborum itaque amet fuga explicabo sapiente obcaecati? Distinctio, facilis.
+
+           </div>
         </div>
 
     </div>
