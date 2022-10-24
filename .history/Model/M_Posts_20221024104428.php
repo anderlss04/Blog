@@ -5,7 +5,6 @@ namespace Model;
 require_once 'Conexion.php';
 require_once 'Posts.php';
 
-/* It's a class that connects to a database and gets, inserts, deletes and modifies posts. */
 class M_Posts extends Conexion{
     
         public function getPosts(){
@@ -29,15 +28,14 @@ class M_Posts extends Conexion{
         }
     
         
-      
-        public function insertPost(Posts $post){
-            $sentencia = parent::con()->prepare("INSERT INTO posts(title, brief, content, image, created_at, status, user_id) VALUES (?,?,?,?,?,?,?)");
+        // public function insertPost(Posts $post){
+        //     $sentencia = parent::con()->prepare("INSERT INTO posts(title, brief, content, image, created_at, status, user_id) VALUES (?,?,?,?,?,?,?)");
     
-            $sentencia->bind_param("ssssssi", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id());
+        //     $sentencia->bind_param("ssssssi", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id());
     
-            $sentencia->execute();
-            $sentencia->close();
-        }
+        //     $sentencia->execute();
+        //     $sentencia->close();
+        // }
     
         public function deletePost($title){
             $sentencia = parent::con()->prepare("DELETE FROM posts WHERE title = ?");

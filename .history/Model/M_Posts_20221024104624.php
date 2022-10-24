@@ -5,7 +5,6 @@ namespace Model;
 require_once 'Conexion.php';
 require_once 'Posts.php';
 
-/* It's a class that connects to a database and gets, inserts, deletes and modifies posts. */
 class M_Posts extends Conexion{
     
         public function getPosts(){
@@ -48,6 +47,11 @@ class M_Posts extends Conexion{
             $sentencia->close();
         }
     
+        /**
+         * Actualiza la base de datos con los nuevos valores del post.
+         * 
+         * @param Posts post es un objeto de la clase Publicaciones
+         */
         public function modPost(Posts $post){
             $sentencia = parent::con()->prepare("UPDATE posts SET title = ?, brief = ?, content = ?, image = ?, created_at = ?, status = ?, user_id = ? WHERE title = ?");
     
