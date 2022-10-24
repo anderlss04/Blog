@@ -28,7 +28,11 @@ class M_Posts extends Conexion{
         }
     
         
-      
+       /**
+        * Toma un objeto de publicación y lo inserta en la base de datos.
+        * 
+        * @param Posts post es el objeto que contiene los datos que se insertarán en la base de datos.
+        */
         public function insertPost(Posts $post){
             $sentencia = parent::con()->prepare("INSERT INTO posts(title, brief, content, image, created_at, status, user_id) VALUES (?,?,?,?,?,?,?)");
     

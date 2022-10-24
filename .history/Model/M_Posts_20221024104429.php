@@ -28,7 +28,6 @@ class M_Posts extends Conexion{
         }
     
         
-      
         public function insertPost(Posts $post){
             $sentencia = parent::con()->prepare("INSERT INTO posts(title, brief, content, image, created_at, status, user_id) VALUES (?,?,?,?,?,?,?)");
     
