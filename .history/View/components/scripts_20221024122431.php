@@ -15,4 +15,4 @@
         crossorigin="anonymous"></script>
 
 
-    <script src="../../src/js"></script>
+    <script src="../../src/js"></script

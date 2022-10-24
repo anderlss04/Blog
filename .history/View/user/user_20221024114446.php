@@ -15,7 +15,7 @@
         <?php include "../cabecera.php" ?>
     </header>
     <main>
-        <?php include "mainUser.php" ?>
+        <?php include "../main.php" ?>
     </main>
 
     <footer>

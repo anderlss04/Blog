@@ -15,11 +15,11 @@
         <?php include "../cabecera.php" ?>
     </header>
     <main>
-        <?php include "mainUser.php" ?>
+        <?php include "View/main.php" ?>
     </main>
 
     <footer>
-        <?php include "../footer.php" ?>
+        <?php include "View/footer.php" ?>
     </footer>
 
 </body>

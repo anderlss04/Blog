@@ -12,14 +12,14 @@
 <body>
 
     <header>
-        <?php include "../cabecera.php" ?>
+        <?php include "View/cabecera.php" ?>
     </header>
     <main>
-        <?php include "mainUser.php" ?>
+        <?php include "View/main.php" ?>
     </main>
 
     <footer>
-        <?php include "../footer.php" ?>
+        <?php include "View/footer.php" ?>
     </footer>
 
 </body>

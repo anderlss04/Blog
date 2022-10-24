@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Usuario</title>
-    <?php include "../components/scripts.php" ?>
+    <?php include "View/components/scripts.php" ?>
 </head>
-
 <body>
 
-    <header>
-        <?php include "../cabecera.php" ?>
+<header>
+        <?php include "View/cabecera.php" ?>
     </header>
     <main>
-        <?php include "mainUser.php" ?>
+        <?php include "View/main.php" ?>
     </main>
 
     <footer>
-        <?php include "../footer.php" ?>
+        <?php include "View/footer.php" ?>
     </footer>
-
+    
 </body>
-
 </html>
