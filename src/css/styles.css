@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background-color: var(--color-jace-fondo);
 }
 
 
@@ -42,6 +43,10 @@ ul {
 #lis-navbar>li {
     display: inline-block;
     padding: 5px;
+}
+
+main {
+    height: 100%;
 }
 
 
@@ -84,6 +89,8 @@ ul {
 
 #content-rigth {
     max-width: 30%;
+    background-color: white!important;
+    height: 100%;
 }
 
 
