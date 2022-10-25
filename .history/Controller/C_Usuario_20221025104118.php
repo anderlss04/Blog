@@ -1,11 +1,11 @@
 <?php
 
 use Model\M_Usuario;
-require_once('../Model/M_Usuario.php');
+require_once('');
 
 $con = new M_Usuario();
 
-$usuario = $con->getUser('tsiggin0');
+$usuario = $con->getUser($_POST['username']);
 
 foreach($usuario as $user){
     $username = $user['username'];
@@ -21,7 +21,7 @@ foreach($usuario as $user){
 
 $con->close();
 
-require_once('../View/user/user.php');
+require_once('View/user/user.php');
 
 
 ?>

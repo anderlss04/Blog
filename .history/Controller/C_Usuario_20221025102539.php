@@ -1,11 +1,13 @@
 <?php
 
 use Model\M_Usuario;
-require_once('../Model/M_Usuario.php');
+require('../Model/M_Usuario.php');
 
 $con = new M_Usuario();
 
-$usuario = $con->getUser('tsiggin0');
+$nomUsuario = $_POST['username'];
+
+$usuario = $con->getUser($nomUsuario);
 
 foreach($usuario as $user){
     $username = $user['username'];
