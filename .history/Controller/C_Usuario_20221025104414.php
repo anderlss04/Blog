@@ -5,7 +5,7 @@ require_once('../Model/M_Usuario.php');
 
 $con = new M_Usuario();
 
-$usuario = $con->getUser('tsiggin0');
+$usuario = $con->getUser(tsiggin0);
 
 foreach($usuario as $user){
     $username = $user['username'];

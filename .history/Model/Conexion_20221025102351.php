@@ -7,7 +7,7 @@ class Conexion
     private $con;
     
     public function __construct(){
-        $this->con = new \mysqli('localhost', 'root', '', 'jase');
+        $this->con = new \mysqli('local', 'root', '', 'jase');
     }
     
     public function close() {
