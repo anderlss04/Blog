@@ -7,7 +7,7 @@ $con = new M_Usuario();
 
 $usuario = $con->getUser('tsiggin0');
 
-foreach($usuario as $user){
+
     $username = $user['username'];
     $password = $user['password'];
     $email = $user['email'];
@@ -17,7 +17,7 @@ foreach($usuario as $user){
     $first_name = $user['first_name'];
     $last_name = $user['last_name'];
     $rol = $user['rol'];
-}
+
 
 $con->close();
 
