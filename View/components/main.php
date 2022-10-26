@@ -16,6 +16,6 @@
     </div>
 
 </div>
-<?php include 'components/slider.php'; ?>
+<?php include 'slider.php'; ?>
 </div>
 
