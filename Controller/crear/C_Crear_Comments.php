@@ -17,7 +17,7 @@ $status = $_POST['status'];
 
 $comment = new Comments( $name, $comment, $email, $post_id, $created_at, $status);
 
-$con->modComment($comment);
+$con->insertComment($comment);
 
 header("Location: ../View/comments.php");
 

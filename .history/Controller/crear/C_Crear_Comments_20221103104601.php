@@ -19,6 +19,6 @@ $comment = new Comments( $name, $comment, $email, $post_id, $created_at, $status
 
 $con->modComment($comment);
 
-header("Location: ../View/comments.php");
+
 
 ?>

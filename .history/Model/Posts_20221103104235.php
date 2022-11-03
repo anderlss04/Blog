@@ -23,6 +23,10 @@ class Posts{
         $this->user_id = $user_id;
     }
 
+    public function getId(){
+        return $this->id;
+    }
+
     public function getTitle(){
         return $this->title;
     }

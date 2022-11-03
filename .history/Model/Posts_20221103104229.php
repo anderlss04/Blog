@@ -13,7 +13,7 @@ class Posts{
     private $status;
     private $user_id;
 
-    public function __construct( $title, $brief, $content, $image, $created_at, $status, $user_id){
+    public function __construct($id, $title, $brief, $content, $image, $created_at, $status, $user_id){
         $this->title = $title;
         $this->brief = $brief;
         $this->content = $content;
@@ -21,6 +21,10 @@ class Posts{
         $this->created_at = $created_at;
         $this->status = $status;
         $this->user_id = $user_id;
+    }
+
+    public function getId(){
+        return $this->id;
     }
 
     public function getTitle(){

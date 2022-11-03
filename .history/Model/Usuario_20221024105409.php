@@ -4,6 +4,7 @@ namespace Model;
 
 class Usuario{
     
+    private $id;
     private $username;
     private $password;
     private $email;
@@ -14,7 +15,8 @@ class Usuario{
     private $last_name;
     private $rol;
 
-    public function __construct( $username, $password, $email, $created_on, $last_login, $active, $first_name, $last_name, $rol){
+    public function __construct($id, $username, $password, $email, $created_on, $last_login, $active, $first_name, $last_name, $rol){
+        $this->id = $id;
         $this->username = $username;
         $this->password = $password;
         $this->email = $email;
@@ -24,6 +26,10 @@ class Usuario{
         $this->first_name = $first_name;
         $this->last_name = $last_name;
         $this->rol = $rol;
+    }
+
+    public function getId(){
+        return $this->id;
     }
 
     public function getUsername(){

@@ -8,6 +8,7 @@ require_once('../Model/M_Posts.php');
 
 $con = new M_Posts();
 
+$id = $_POST['id'];
 $title = $_POST['title'];
 $brief = $_POST['brief'];
 $content = $_POST['content'];
@@ -16,10 +17,8 @@ $created_at = $_POST['created_at'];
 $status = $_POST['status'];
 $user_id = $_POST['user_id'];
 
-$post = new Posts( $title, $brief, $content, $image, $created_at, $status, $user_id);
+$post = new Posts($id, $title, $brief, $content, $image, $created_at, $status, $user_id);
 
-$con->modPost($post);
-
-header("Location: ../View/posts.php");
+$con->insertPost($post);
 
 ?>

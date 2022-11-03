@@ -26,6 +26,10 @@ class Usuario{
         $this->rol = $rol;
     }
 
+    public function getId(){
+        return $this->id;
+    }
+
     public function getUsername(){
         return $this->username;
     }

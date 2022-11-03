@@ -16,10 +16,10 @@ $created_at = $_POST['created_at'];
 $status = $_POST['status'];
 $user_id = $_POST['user_id'];
 
-$post = new Posts( $title, $brief, $content, $image, $created_at, $status, $user_id);
+$post = new Posts($title, $brief, $content, $image, $created_at, $status, $user_id);
 
-$con->modPost($post);
+$con->insertPost($post);
 
-header("Location: ../View/posts.php");
+header("Location: ../View/crear/crear_post.php");
 
 ?>

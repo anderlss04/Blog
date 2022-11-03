@@ -18,7 +18,7 @@ $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
 $rol = $_POST['rol'];
 
-$usuario = new Usuario( $username, $password, $email, $created_on, $last_login, $active, $first_name, $last_name, $rol);
+$usuario = new Usuario($username, $password, $email, $created_on, $last_login, $active, $first_name, $last_name, $rol);
 
 $con->modUsuario($usuario);
 

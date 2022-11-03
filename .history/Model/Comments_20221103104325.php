@@ -11,13 +11,17 @@ class Comments{
     private $created_at;
     private $status;
 
-    public function __construct( $name, $comment, $email, $post_id, $created_at, $status){
+    public function __construct($id, $name, $comment, $email, $post_id, $created_at, $status){
         $this->name = $name;
         $this->comment = $comment;
         $this->email = $email;
         $this->post_id = $post_id;
         $this->created_at = $created_at;
         $this->status = $status;
+    }
+
+    public function getId(){
+        return $this->id;
     }
 
     public function getName(){

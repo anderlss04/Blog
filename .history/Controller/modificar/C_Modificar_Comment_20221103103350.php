@@ -15,7 +15,7 @@ $post_id = $_POST['post_id'];
 $created_at = $_POST['created_at'];
 $status = $_POST['status'];
 
-$comment = new Comments( $name, $comment, $email, $post_id, $created_at, $status);
+$comment = new Comments(1, $name, $comment, $email, $post_id, $created_at, $status);
 
 $con->modComment($comment);
 
