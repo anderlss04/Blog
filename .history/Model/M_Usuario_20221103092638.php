@@ -44,8 +44,6 @@ class M_Usuario extends Conexion{
 
     public function deleteUsuario($username){
         $sentencia = parent::con()->prepare("UPDATE users SET active = 0 WHERE username = ?");
-
-        $sentencia->bind_param("s", $username);
         
         $sentencia->execute();
         $sentencia->close();
