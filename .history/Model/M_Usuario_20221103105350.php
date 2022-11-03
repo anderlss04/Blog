@@ -37,9 +37,7 @@ class M_Usuario extends Conexion{
         
     }
 
-    public function insertLastLogin($username){
-        parent::con()->query("UPDATE users SET last_login = NOW() WHERE username = '$username'");
-    }
+    public function 
     
     public function insertUsuario(Usuario $usuario){
         $sentencia = parent::con()->prepare("INSERT INTO users(username, password, email, created_on, last_login, active, first_name, last_name, rol) VALUES (?,?,?,?,?,?,?,?,?)");

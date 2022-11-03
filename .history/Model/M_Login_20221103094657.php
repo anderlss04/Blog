@@ -11,8 +11,6 @@ Class M_Login extends Conexion{
     return $datos;
     }
 
-    
-
 
 
 }

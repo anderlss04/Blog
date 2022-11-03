@@ -12,7 +12,7 @@ $name = $_POST['name'];
 $comment = $_POST['comment'];
 $email = $_POST['email'];
 $post_id = $_POST['post_id'];
-$created_at = date("Y-m-d");
+$created_at = date("Y/m-d");
 $status = $_POST['status'];
 
 $comment = new Comments( $name, $comment, $email, $post_id, $created_at, $status);

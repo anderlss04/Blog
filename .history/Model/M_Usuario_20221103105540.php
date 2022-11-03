@@ -9,7 +9,6 @@ class M_Usuario extends Conexion{
     public function View($url , $array){
         var_dump($array);
         $data= serialize($array);
-        var_dump($data);
 
          header("Location:". $url ."?data=".$data, true);
         //  header("Location:". $url ."?data=".$data);

@@ -14,7 +14,7 @@ if(isset($_POST['nombre']) && $_POST['pass'] ){
     }else{
         session_start();
         $_SESSION['user'] = $nombre;
-
+        
         header("Location: portada.php");
     }
 }
