@@ -6,13 +6,6 @@ require_once 'Conexion.php';
 
 class M_Usuario extends Conexion{
 
-   /**
-    * It takes an array and serializes it, then it redirects to the url you pass in with the serialized
-    * array as a GET parameter.
-    * 
-    * @param url The url of the page you want to redirect to.
-    * @param array The array you want to pass to the view.
-    */
     public function View($url , $array){
         var_dump($array);
         $data= serialize($array);
@@ -54,8 +47,8 @@ class M_Usuario extends Conexion{
     }
 
     public function deleteUsuario($username){
-        $sentencia = parent::con()->prepare("DELETE FROM usuarios WHERE username = ?");
-        
+        $sentencia = parent::con()->prepare("UPDATE users SET active = 0 WHERE username = ?");
+
         $sentencia->bind_param("s", $username);
         
         $sentencia->execute();
