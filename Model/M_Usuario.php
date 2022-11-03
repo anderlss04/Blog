@@ -6,6 +6,18 @@ require_once 'Conexion.php';
 
 class M_Usuario extends Conexion{
 
+   /**
+    * It takes an array and serializes it, then it redirects to the url you pass in with the serialized
+    * array as a GET parameter.
+    * 
+    * @param url The url of the page you want to redirect to.
+    * @param array The array you want to pass to the view.
+    */
+    public function View($url , $array){
+        $data= serialize($array);
+         header("Location:". $url ."?data=".$data);
+     
+     }
     public function getUsers(){
         $query = parent::con()->query('SELECT * FROM users');
         

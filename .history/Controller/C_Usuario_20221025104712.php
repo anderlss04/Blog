@@ -5,8 +5,9 @@ require_once('../Model/M_Usuario.php');
 
 $con = new M_Usuario();
 
-$usuario = $con->getUser('tsiggin0');
+$usuario = $con->getUsers();
 
+<<<<<<< HEAD:.history/Controller/C_Usuario_20221025104712.php
 foreach($usuario as $user){
     $username = $user['username'];
     $password = $user['password'];
@@ -18,10 +19,16 @@ foreach($usuario as $user){
     $last_name = $user['last_name'];
     $rol = $user['rol'];
 
+=======
+>>>>>>> frontJairo:Controller/C_Usuario.php
 
+var_dump($usuario);
+
+// $path = '';
 $con->close();
+$con->View('../View/users/user.php', $usuario)
 
-require_once('../View/user/user.php');
+// require_once('../View/users/user.php');
 
 
 ?>
