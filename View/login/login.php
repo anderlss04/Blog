@@ -19,7 +19,7 @@
     <div class="content w-50" >
         <div class="w-100 p-5">
                <h1 class="text-center">LOG IN </h1>
-            <form action="M_login.php" method="POST">
+            <form action="../../Controller/Login.php" method="POST">
               <div class="form-group p-3">
                 <label for="text">Usuario</label> 
                 <div class="input-group">
@@ -28,7 +28,7 @@
                       <i class="fa fa-user"></i>
                     </div>
                   </div> 
-                  <input id="text" name="text" type="text" aria-describedby="textHelpBlock" required="required" class="form-control">
+                  <input id="text" name="nombre" type="text" aria-describedby="textHelpBlock" required="required" class="form-control">
                 </div> 
                 <span id="textHelpBlock" class="form-text text-muted">escribe tu usuario o correo electrónico</span>
               </div>
@@ -40,7 +40,7 @@
                       <i class="fa fa-unlock-alt"></i>
                     </div>
                   </div> 
-                  <input id="pass" name="pass" type="text" class="form-control" aria-describedby="passHelpBlock" required="required">
+                  <input id="pass" name="pass" type="password" class="form-control" aria-describedby="passHelpBlock" required="required">
                 </div> 
                 <span id="passHelpBlock" class="form-text text-muted">Ingresa tu contraseña</span>
               </div> 

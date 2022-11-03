@@ -20,8 +20,6 @@ $rol = $_POST['rol'];
 
 $usuario = new Usuario(1, $username, $password, $email, $created_on, $last_login, $active, $first_name, $last_name, $rol);
 
-$con->modUsuario($usuario);
-
-header("Location: ../View/usuarios.php");
+$con->modUsuario();
 
 ?>

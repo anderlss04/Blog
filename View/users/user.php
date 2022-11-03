@@ -12,7 +12,7 @@
 
 <body>
 
-
+<?php echo gettype($_GET["data"])  ?>
 
     <?php $datos = unserialize($_GET["data"]);
     //   var_dump($datos);
@@ -29,6 +29,8 @@
         <?php require "../components/cabecera.php" ?>
     </header>
     <main>
+    <!-- <?php require "mainUser.php" ?> -->
+
     </main>
 
     <footer>

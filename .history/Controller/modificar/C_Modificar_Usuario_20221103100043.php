@@ -22,6 +22,6 @@ $usuario = new Usuario(1, $username, $password, $email, $created_on, $last_login
 
 $con->modUsuario($usuario);
 
-header("Location: ../View/usuarios.php");
+
 
 ?>

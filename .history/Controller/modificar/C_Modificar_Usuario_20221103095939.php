@@ -17,11 +17,9 @@ $active = $_POST['active'];
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
 $rol = $_POST['rol'];
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
 
-$usuario = new Usuario(1, $username, $password, $email, $created_on, $last_login, $active, $first_name, $last_name, $rol);
-
-$con->modUsuario($usuario);
-
-header("Location: ../View/usuarios.php");
+$con->modUsuario($_POST['username'], $_POST['password'], $_POST['email'], $_POST['rol']);
 
 ?>
