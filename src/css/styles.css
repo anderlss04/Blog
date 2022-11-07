@@ -75,7 +75,8 @@ main {
 
 #content-main {
     height: 100%;
-    overflow-x: hidden;
+    overflow: scroll;
+    scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
