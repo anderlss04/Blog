@@ -75,9 +75,9 @@ main {
 
 #content-main {
     height: 100%;
-    overflow: scroll ;
-    scrollbar-width: thin;
 }
+
+#content-main::--webik
 
 #scroll-right {
     max-height: 50%;

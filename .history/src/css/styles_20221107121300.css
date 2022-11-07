@@ -75,8 +75,6 @@ main {
 
 #content-main {
     height: 100%;
-    overflow: scroll ;
-    scrollbar-width: thin;
 }
 
 #scroll-right {
@@ -95,7 +93,9 @@ main {
     height: 100%;
 }
 
-
+#publicacion{
+    width: calc();
+}
 
 
 /* #card-main {

@@ -75,8 +75,6 @@ main {
 
 #content-main {
     height: 100%;
-    overflow: scroll ;
-    scrollbar-width: thin;
 }
 
 #scroll-right {
@@ -94,8 +92,6 @@ main {
     background-color: white!important;
     height: 100%;
 }
-
-
 
 
 /* #card-main {
