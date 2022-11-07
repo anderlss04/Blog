@@ -75,6 +75,11 @@ main {
 
 #content-main {
     height: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 #scroll-right {
