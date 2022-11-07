@@ -1,5 +1,6 @@
 @import url(styles.css);
-body {}
+
+/* body {} */
 
 header {
     display: none!important;
@@ -22,6 +23,7 @@ header {
 }
 
 .img-perfil {
+    /* background-color: #232326; */
     background-image: url("../images/perfil.jpg");
     background-repeat: no-repeat;
     background-position: center;
