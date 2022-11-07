@@ -17,6 +17,6 @@
 
     </div>
     <?php include 'slider.php'; ?>
-    <?php require "Controller/ver/C_Ver_Todos_Posts.php";?>
+    <?php require("Controller/ver/C_Ver_Todos_Posts.php");?>
 <?php var_dump($posts); ?>
 </div>

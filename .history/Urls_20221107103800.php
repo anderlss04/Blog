@@ -1,8 +1,8 @@
 <?php
-namespace Model;
+namespace Urls;
 require_once 'Usuario.php';
 
-class Conexion
+class Urls
 {
     private $con;
     

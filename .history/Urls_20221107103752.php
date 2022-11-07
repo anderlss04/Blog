@@ -1,5 +1,5 @@
 <?php
-namespace Model;
+namespace Url;
 require_once 'Usuario.php';
 
 class Conexion
