@@ -75,12 +75,17 @@ main {
 
 #content-main {
     height: 100%;
+<<<<<<< HEAD
+    overflow: scroll ;
+    scrollbar-width: thin;
+=======
     overflow: scroll;
     scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
     display: none;
+>>>>>>> frontJairo
 }
 
 #scroll-right {

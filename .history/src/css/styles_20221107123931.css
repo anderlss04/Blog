@@ -75,12 +75,14 @@ main {
 
 #content-main {
     height: 100%;
+
     overflow: scroll;
     scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
     display: none;
+
 }
 
 #scroll-right {

@@ -79,10 +79,6 @@ main {
     scrollbar-width: thin;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 #scroll-right {
     max-height: 50%;
 }

@@ -1,5 +1,7 @@
 @import url(styles.css);
-body {}
+body {
+    /* background-color: aqua; */
+}
 
 header {
     display: none!important;
@@ -16,12 +18,16 @@ header {
 }
 
 .content-img-inner {
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100%;
     /* position: absolute; */
 }
 
 .img-perfil {
+    /* background-color: #232326; */
     background-image: url("../images/perfil.jpg");
     background-repeat: no-repeat;
     background-position: center;
