@@ -5,6 +5,7 @@
     <div class="content-img W-100  d-flex justify-content-center align-items-center">
         <div class="content-img-inner d-flex justify-content-center align-items-center">
             <div class="img-perfil">
+
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@ Class M_Login extends Conexion{
 
 
     public function  comprobarUser($username, $password){
-        $datos = parent::con()->query("SELECT username, password FROM users WHERE username = '$username' AND password = '$password'");
+        $datos = parent::con()->query("SELECT username, password FROM users WHERE username = '$username' AND password = '$dni'");
     return $datos;
     }
 

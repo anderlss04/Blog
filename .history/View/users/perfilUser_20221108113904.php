@@ -1,10 +1,11 @@
     <link rel="stylesheet" href="../../src/css/user.css">
     <?php require '../components/scripts.php'; ?>
-    <?php require '../../Controller/ver/C_Ver_Post_User.php'; ?>
+    <?php// require '../../Controller/ver/C_Ver_Todos_Posts.php'; ?>
 
     <div class="content-img W-100  d-flex justify-content-center align-items-center">
         <div class="content-img-inner d-flex justify-content-center align-items-center">
             <div class="img-perfil">
+
             </div>
         </div>
     </div>

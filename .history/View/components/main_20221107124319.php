@@ -1,4 +1,4 @@
-<?php require 'Controller/ver/C_Ver_Todos_Posts.php'; ?>
+<?php require "Controller/ver/C_Ver_Todos_Posts.php"; ?>
 <div class="d-flex flex-direccion-row w-100 h-100 ">
     <div id="container-main" class="d-flex flex-direccion-row  p-5 ">
         <div id="content-main" class="content  col-xl-12 d-flex justify-content-center h-100 ">

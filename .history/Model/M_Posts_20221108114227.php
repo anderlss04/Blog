@@ -29,15 +29,7 @@ class M_Posts extends Conexion{
         }
 
         public function getPostsUser($user_id){
-            $query = parent::con()->query("SELECT * FROM posts WHERE user_id = '$user_id'");
-    
-            $retorno = [];
-    
-            while($fila = $query->fetch_assoc()){
-                $retorno[] = $fila;
-            }
-    
-            return  $retorno;
+            
         }
     
         
