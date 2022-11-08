@@ -100,10 +100,20 @@ main {
 }
 
 
-
-
 /* #card-main {
     display: flex;
     flex-direction: column;
     align-items: center;
 } */
+
+.boton {
+    background-color: var(--color-jace-primary)!important;
+    color: var(--color-jace-fondo)!important;
+}
+
+.boton:hover {
+    background-color: var(--color-jace-fondo)!important;
+    color: var(--color-jace-primary)!important;
+    font-weight: bold;
+    border: solid 1px var(--color-jace-primary)!important;
+}

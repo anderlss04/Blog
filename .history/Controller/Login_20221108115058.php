@@ -15,6 +15,6 @@ if(isset($_POST['nombre']) && $_POST['pass'] ){
         session_start();
         $_SESSION['user'] = $nombre;
 
-        header("Location: ../View/users/perfilUser.php");
+        header("Location: View/users\perfilUser.php");
     }
 }

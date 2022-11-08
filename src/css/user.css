@@ -1,11 +1,17 @@
 @import url(styles.css);
 body {
-    /* background-color: aqua; */
+    background-color: var(--color-jace-fondo)!important;
 }
 
 header {
     display: none!important;
 }
+
+
+/* button {
+    background-color: var(--color-jace-primary);
+    color: var(--color-jace-fondo);
+} */
 
 .content-img {
     width: 100%;
@@ -15,6 +21,15 @@ header {
     color: wheat;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     /* border-radius: 50%; */
+}
+
+.opcion button {
+    color: var(--color-jace-primary);
+}
+
+.opcion button:hover {
+    color: var(--color-jace-fondo);
+    background-color: var(--color-jace-primary);
 }
 
 .content-img-inner {
@@ -36,4 +51,29 @@ header {
     height: 200px;
     border-radius: 50%;
     box-shadow: rgb(7, 7, 7) 0px 20px 30px 5px;
+}
+
+.datos-perfil {
+    margin: 25px 0px;
+}
+
+.datos-perfil form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 5px 10px 18px rgb(150, 148, 148)
+}
+
+.datos-perfil .form-group {
+    margin: 15px 0;
+}
+
+.opcion ul#myTabl {
+    border-bottom: solid 1px var(--color-jace-primary)!important;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
