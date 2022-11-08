@@ -1,0 +1,101 @@
+:root {
+    --color-jace-primary: #9E0D09;
+    /* --color-jace-primary: #F52720; */
+    --color-jace-fondo: #E4ECF0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--color-jace-fondo);
+}
+
+
+/* main {
+    height: 100%
+} */
+
+
+/* main {
+    height: 100%;
+} */
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+#lis-navbar>li {
+    display: inline-block;
+    padding: 5px;
+}
+
+main {
+    height: 100%;
+}
+
+
+/* header */
+
+.title-container,
+.title-container a {
+    color: white!important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#navbar-header {
+    background-color: var(--color-jace-primary);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+/* main */
+
+#container-main {
+    background-color: var(--color-jace-fondo);
+    width: 70%;
+    height: auto;
+}
+
+#content-main {
+    height: 100%;
+}
+
+#scroll-right {
+    max-height: 50%;
+}
+
+
+/* 
+#publicacion .card {
+    height: 500px;
+} */
+
+#content-rigth {
+    max-width: 30%;
+    background-color: white!important;
+    height: 100%;
+}
+
+
+/* #card-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
