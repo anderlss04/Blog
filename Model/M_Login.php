@@ -10,7 +10,7 @@ class M_Login
 
         $datos = mysqli_query(
             $con,
-            "SELECT * FROM users WHERE 'username' = '$username' AND 'password' = '$password'"
+            "SELECT * FROM users WHERE username = '$username' "
         );
         // $datos = array_merge($datos, $datos);
         if (!$datos) {
