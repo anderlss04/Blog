@@ -1,6 +1,6 @@
 <?php
-$user = $_POST['nombre'];
-$pass = $_POST['pass'];
+$user = $_POST["nombre"];
+$pass = $_POST["pass"];
 
 $mysqli = new mysqli('localhost', 'root', '', 'jase');
 $conn = mysqli_connect('localhost', 'root', '', 'jase');
@@ -17,9 +17,9 @@ if (mysqli_num_rows($result) > 0) {
     session_start();
     $_SESSION['user'] = $user;
     // print_r("Bienvenido - " . $user);
-    header('Location: ../View/users/perfilUser.php');
+    header("Location: ../users/perfilUser.php");
 } else {
-    header('Location: ../View/login/login.php?error=1');
-    print_r('error usuario o contraseña ');
+    header("Location: ../login.php");
+    print_r("error usuario o contraseña ");
 }
 ?>

@@ -29,11 +29,9 @@ class M_Posts extends Conexion{
         }
 
         public function getPostsUser($user){
-            $query = parent::con()->query("SELECT 'id' FROM users WHERE username = '$user'");
+            $query = parent::con()->query("SELECT 'id' FROM users WHERE user = '$user'");
 
-            while($fila = $query->fetch_assoc()){
-                $user_id = $fila['id'];
-            }
+            
 
             $query = parent::con()->query("SELECT * FROM posts WHERE user_id = '$user_id'");
     

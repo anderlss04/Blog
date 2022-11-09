@@ -8,8 +8,9 @@ $con = new M_Posts();
 
 session_start();
 $posts = $con->getPostsUser($_SESSION['user']);
-
 var_dump($posts);
+
+// var_dump($posts);
 
 $con->close();  
 
