@@ -19,7 +19,7 @@ if (mysqli_num_rows($result) > 0) {
     // print_r("Bienvenido - " . $user);
     header("Location: ../View/users/perfilUser.php");
 } else {
-    header("Location: ../View/login/login.php?error=1");
+    header("Location: ../View/login/login.php");
     print_r("error usuario o contraseña ");
 }
 ?>

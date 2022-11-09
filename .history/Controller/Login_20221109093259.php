@@ -16,10 +16,10 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
     session_start();
     $_SESSION['user'] = $user;
-    // print_r("Bienvenido - " . $user);
-    header("Location: ../View/users/perfilUser.php");
+    print_r("Bienvenido" . $user);
+    // header("Location: principal.php");
 } else {
-    header("Location: ../View/login/login.php?error=1");
+    // header("Location: index.php?error=1");
     print_r("error usuario o contraseña ");
 }
 ?>

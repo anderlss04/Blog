@@ -6,10 +6,10 @@ require_once('../../Model/M_Posts.php');
 $con = new M_Posts();
 
 
-session_start();
-$posts = $con->getPostsUser($_SESSION['user']);
 
-var_dump($posts);
+$posts = $con->getPostsUser();
+
+// var_dump($posts);
 
 $con->close();  
 

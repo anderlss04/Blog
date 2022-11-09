@@ -23,7 +23,7 @@
           <h1 class="text-center">LOG IN </h1>
           <?php
           if (isset($_GET['error'])) {
-            echo "<p style='color:red;' >Usuario o contraseña incorrectos</p>";
+            echo '<p class=error >Usuario o contraseña incorrectos</p>';
           }
           ?>
           <form action="../../Controller/Login.php" method="POST">
