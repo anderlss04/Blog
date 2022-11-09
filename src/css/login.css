@@ -171,3 +171,26 @@ a {
     text-decoration: none;
     color: #2c7715;
 }
+
+
+/* forgot */
+
+form.login {
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgb(31, 31, 31);
+    margin-top: 25px;
+}
+
+form.login input {
+    background-color: #d8d2d281;
+    border: none;
+    border-bottom: 1px solid #0c0c0c81;
+    /* box-shadow: 0px 5px 5px rgb(31, 31, 31); */
+}
+
+form.login .form-group {
+    margin: 15px;
+}
