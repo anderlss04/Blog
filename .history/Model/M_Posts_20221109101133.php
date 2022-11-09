@@ -29,12 +29,11 @@ class M_Posts extends Conexion{
         }
 
         public function getPostsUser($user){
-            $query = parent::con()->query("SELECT * FROM users WHERE username = '$user'");
+            $query = parent::con()->query("SELECT 'id' FROM users WHERE username = '$user'");
 
             while($fila = $query->fetch_assoc()){
-                $user_id = $fila['id'];
+                $user_id = $fila;
             }
-            var_dump($user_id);
 
             $query = parent::con()->query("SELECT * FROM posts WHERE userId = '$user_id'");
     
@@ -50,7 +49,7 @@ class M_Posts extends Conexion{
         
       
         public function insertPost(Posts $post){
-            $sentencia = parent::con()->prepare("INSERT INTO posts(title, brief, content, image, created_at, status, userId) VALUES (?,?,?,?,?,?,?)");
+            $sentencia = parent::con()->prepare("INSERT INTO posts(title, brief, content, image, created_at, status, user_id) VALUES (?,?,?,?,?,?,?)");
     
             $sentencia->bind_param("ssssssi", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id());
     
@@ -68,7 +67,7 @@ class M_Posts extends Conexion{
         }
     
         public function modPost(Posts $post){
-            $sentencia = parent::con()->prepare("UPDATE posts SET title = ?, brief = ?, content = ?, image = ?, created_at = ?, status = ?, userId = ? WHERE title = ?");
+            $sentencia = parent::con()->prepare("UPDATE posts SET title = ?, brief = ?, content = ?, image = ?, created_at = ?, status = ?, user_id = ? WHERE title = ?");
     
             $sentencia->bind_param("ssssssis", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id(), $post->getTitle());
     

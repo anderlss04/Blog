@@ -36,7 +36,7 @@ class M_Posts extends Conexion{
             }
             var_dump($user_id);
 
-            $query = parent::con()->query("SELECT * FROM posts WHERE userId = '$user_id'");
+            $query = parent::con()->query("SELECT * FROM posts WHERE userId = '$user_id[0'");
     
             $retorno = [];
     
