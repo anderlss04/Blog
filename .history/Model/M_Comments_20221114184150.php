@@ -48,7 +48,7 @@ class M_Comments extends Conexion{
     public function modComment(Comments $comment){
         $sentencia = parent::con()->prepare("UPDATE comments SET name = ?, comment = ?, email = ?, post_id = ?, created_at = ?, status = ? WHERE id = ?");
 
-        $sentencia->bind_param("ssssss", $comment->getName(), $comment->getComment(), $comment->getEmail(), $comment->getPost_id(), $comment->getCreated_at(), $comment->getStatus());
+        $sentencia->bind_param("sssssss", $comment->getName(), $comment->getComment(), $comment->getEmail(), $comment->getPost_id(), $comment->getCreated_at(), $comment->getStatus(), $comment->getId());
 
         $sentencia->execute();
         $sentencia->close();

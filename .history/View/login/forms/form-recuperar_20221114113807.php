@@ -1,7 +1,5 @@
-<?php $var = $intancia->RutaLinks($escaped_link, "Controller/Login.php" )  ?>
 
-<form action="<?php echo $var[0]['ruta'] ?> " method="post">
-
+<form>
 <p>Recibiras un correo para recuperar tu contraseña. <br> <strong class="text-danger"> Revisa tu Email</strong></p>
  <div class="form-outline mb-4">
      <input type="text" id="formCodigo" class="form-control" />

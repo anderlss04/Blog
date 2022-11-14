@@ -1,6 +1,7 @@
 <?php $var = $intancia->RutaLinks($escaped_link, "Controller/Login.php" )  ?>
 
 <form action="<?php echo $var[0]['ruta'] ?> " method="post">
+
  
     <div class="form-outline mb-4">
         <input type="text" id="formUsername" name="nombre" class="form-control" />

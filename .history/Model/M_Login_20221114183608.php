@@ -2,7 +2,7 @@
 namespace Model;
 require_once 'Conexion.php';
 
-class M_Login extends Conexion
+class M_Login extends
 {
     public function comprobarUser($username, $password)
     {
@@ -20,15 +20,6 @@ class M_Login extends Conexion
         }
         // return $datos;
     }
-
-    public function recuperarContraseña($email){
-        $query = parent::con()->query("SELECT * FROM users WHERE email = '$email'");
-
-        while($fila = $query->fetch_assoc()){
-            return $fila;
-        }
-    }
-
 }
 
 ?>
