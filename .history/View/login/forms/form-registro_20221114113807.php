@@ -1,6 +1,5 @@
 
-<form action="" method="post">
-    <?php var_dump($intancia) ?>
+<form>
     <!--  Creación de una fila con dos columnas. La primera columna es para el nombre y la segunda
            columna es para el apellido. * -->
 

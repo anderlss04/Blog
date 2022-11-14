@@ -51,7 +51,7 @@ class M_Posts extends Conexion{
         public function insertPost(Posts $post){
             $sentencia = parent::con()->prepare("INSERT INTO posts(title, brief, content, image, created_at, status, userId) VALUES (?,?,?,?,?,?,?)");
     
-            $sentencia->bind_param("sssbssi", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id());
+            $sentencia->bind_param("ssssssi", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id());
     
             $sentencia->execute();
             $sentencia->close();
@@ -69,7 +69,7 @@ class M_Posts extends Conexion{
         public function modPost(Posts $post){
             $sentencia = parent::con()->prepare("UPDATE posts SET title = ?, brief = ?, content = ?, image = ?, created_at = ?, status = ?, userId = ? WHERE title = ?");
     
-            $sentencia->bind_param("sssbssis", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id(), $post->getTitle());
+            $sentencia->bind_param("sssssis", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id(), $post->getTitle());
     
             $sentencia->execute();
             $sentencia->close();

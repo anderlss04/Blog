@@ -9,7 +9,7 @@
     </div>
 
     <div class="form-outline mb-4">
-        <input type="password" name="pass" id="formPassWord" class="form-control" />
+        <input type="password" id="formPassWord" class="form-control" />
         <label class="form-label"  for="formPassWord">Contraseña</label>
     </div>
 

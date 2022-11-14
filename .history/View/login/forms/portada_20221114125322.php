@@ -9,8 +9,8 @@
     </div>
 
     <div class="form-outline mb-4">
-        <input type="password" name="pass" id="formPassWord" class="form-control" />
-        <label class="form-label"  for="formPassWord">Contraseña</label>
+        <input type="password" id="formPassWord" class="form-control" />
+        <label class="form-label" name="pass" for="formPassWord">Contraseña</label>
     </div>
 
     <div class="form-check d-flex justify-content-center mb-4">

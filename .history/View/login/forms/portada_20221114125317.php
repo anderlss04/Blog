@@ -4,13 +4,13 @@
    <?php var_dump($valor)?>
  
     <div class="form-outline mb-4">
-        <input type="text" id="formUsername" name="nombre" class="form-control" />
-        <label class="form-label" for="formUsername">Email o Nombre de Usuario </label>
+        <input type="text" id="formUsername" class="form-control" />
+        <label class="form-label"  for="formUsername">Email o Nombre de Usuario </label>
     </div>
 
     <div class="form-outline mb-4">
-        <input type="password" name="pass" id="formPassWord" class="form-control" />
-        <label class="form-label"  for="formPassWord">Contraseña</label>
+        <input type="password" id="formPassWord" class="form-control" />
+        <label class="form-label" name="pass" for="formPassWord">Contraseña</label>
     </div>
 
     <div class="form-check d-flex justify-content-center mb-4">
