@@ -6,7 +6,7 @@
 
                 <?php foreach ($posts as $post) { ?>
                     <div class="card border-0 shadow mb-3  col-xl-12">
-                        <img class="card-img-top" <?php echo "src='data:image/jpeg;base64," . base64_encode($post['image']) . "'"; ?> alt="Card image cap">
+                        <img class="card-img-top" <?php echo "src='data:image/jpeg;base64," . base64_encode($post['image']) . "'";?> alt="Card image cap">
                         <div class="card-body ">
                             <h5 class="card-title"><?php echo $post['title']; ?></h5>
                             <p class="card-text"><?php echo $post['brief']; ?></p>
@@ -20,6 +20,5 @@
         </div>
 
     </div>
-    <?php //include 'slider.php'; 
-    ?>
+    <?php include 'slider.php'; ?>
 </div>
