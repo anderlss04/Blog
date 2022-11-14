@@ -14,5 +14,4 @@ include 'view/components/user/nav.php';
 include 'view/components/user/main.php';
 ?>
 
-
 <?php require 'view/components/footer.php'; ?>
