@@ -1,64 +1,46 @@
+
+<?php
+include '../components/user/ObtenerRuta.php';
+require '../../Controllers/RutasController.php';
+
+$valor = $intancia->Vistas($escaped_link);
+$titulo = $intancia->Titulos($escaped_link);
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <?php include "../../View/components/scripts.php" ?>
-  <link rel="stylesheet" href="../../src/css/login.css">
-  <link rel="stylesheet" href="../../src/css/styles.css">
-  <script src="../../src/js/login.js"></script>
-
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php  echo $titulo ?></title>
+    <link rel="stylesheet" href="../../src/styles/login.css">
+   <?php include '../components/scripts/links.php' ?>
 </head>
-
 <body>
 
-  <main>
-    <div class="container d-flex justify-content-center align-items-center h-100">
-
-      <div class="content w-50">
-        <div class="w-100 p-5">
-          <h1 class="text-center">LOG IN </h1>
-          <?php
-          if (isset($_GET['error'])) {
-            echo "<p style='color:red;' >Usuario o contraseña incorrectos</p>";
-          }
-          ?>
-          <form action="../../Controller/Login.php" method="POST">
-            <div class="form-group p-3">
-              <label for="text">Usuario</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fa fa-user"></i>
-                  </div>
-                </div>
-                <input id="text" name="nombre" type="text" aria-describedby="textHelpBlock" required="required" class="form-control">
-              </div>
-              <span id="textHelpBlock" class="form-text text-muted">escribe tu usuario o correo electrónico</span>
-            </div>
-            <div class="form-group p-3">
-              <label for="pass">contraseña</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fa fa-unlock-alt"></i>
-                  </div>
-                </div>
-                <input id="pass" name="pass" type="password" class="form-control" aria-describedby="passHelpBlock" required="required">
-              </div>
-              <span id="passHelpBlock" class="form-text text-muted">Ingresa tu contraseña</span>
-            </div>
-            <div class="form-group text-center">
-              <button name="submit" type="submit" class="btn btn-primary">Entrar</button>
-            </div>
-          </form>
+<section class="text-center text-lg-start">
+  <div class="container py-4">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card cascading-right formulario" >
+          <div class="card-body p-5 shadow-5 text-center">
+            <h2 class="fw-bold mb-5"><?php  echo strtoupper($titulo) ?> </h2>
+            <!-- <?php  //include "forms/portada.php" ?> -->
+            <?php include getcwd().$valor ;
+            ?>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
 
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <img src="../../src/images/login/fondo_registrar.jpg" class="w-100 rounded-4 shadow-4"
+          alt="" />
+      </div>
+    </div>
+  </div>
+
+</section>
+</body>
 </html>

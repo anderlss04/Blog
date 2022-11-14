@@ -1,28 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<?php require 'view/components/header.php' ?>
+<?php require 'Controllers/RutasController.php'; 
+$valor = $intancia->rutaLinks($escaped_link, '');
+include $valor[0]['script'];?>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   <?php require "View/components/scripts.php" ?>
-    <title>JASE</title>
+    <link rel="stylesheet" href="src/styles/portada.css">
 </head>
 
-<body>
-    <header>
-        <?php require "View/components/cabecera.php" ?>
-    </header>
-    <main>
-        <?php require "View/components/main.php" ?>
-    </main>
+<?php
+// $valor = $intancia->rutaLinks($escaped_link, 'view/components/user/nav.php');
+include 'view/components/user/nav.php';
+include 'view/components/user/main.php';
+?>
 
-    <footer>
-        <?php require "View/components/footer.php" ?>
-    </footer>
-    <?php  //require "/View/scripts.php" ?>
 
-</body>
-
-</html>
+<?php require 'view/components/footer.php' ?>
