@@ -63,7 +63,7 @@ require '../../Controller/ver/C_Ver_Post_User.php';
                         <div id="content-main" class="content  col-xl-12 d-flex justify-content-center h-100 ">
                             <div id="publicacion" class=" col-xl-12  w-100">
 
-                                <?php foreach ($posts as $post) require 'postUser.php'?>
+                                <?php foreach ($posts as $post) require ?>
                             </div>
                         </div>
 
