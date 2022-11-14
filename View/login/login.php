@@ -28,6 +28,9 @@ $titulo = $intancia->Titulos($escaped_link);
                             <h2 class="fw-bold mb-5"><?php echo strtoupper(
                                 $titulo
                             ); ?> </h2>
+                            <?php if (isset($_GET['error'])) {
+                                   echo "<p style='color:red;' >Usuario o contraseña incorrectos</p>";
+                               } ?>
                             <!-- <?php
 //include "forms/portada.php"
 ?> -->
