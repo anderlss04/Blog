@@ -1,4 +1,4 @@
-<?php $var = $intancia->RutaLinks($escaped_link, "Controller/crear/C_Crear_Usuario.php" )  ?>
+<?php $var = $intancia->RutaLinks($escaped_link, "Controller/Login.php" )  ?>
 
 <form action="<?php echo $var[0]['ruta'] ?> " method="post">
    <?php var_dump($valor)?>
@@ -8,13 +8,13 @@
     <div class="row">
         <div class="col-md-6 mb-4">
             <div class="form-outline">
-                <input type="text" id="formNombre" name="first_name" class="form-control" />
+                <input type="text" id="formNombre" class="form-control" />
                 <label class="form-label" for="formNombre">Nombre</label>
             </div>
         </div>
         <div class="col-md-6 mb-4">
             <div class="form-outline">
-                <input type="text" id="formApellido" name="last_name" class="form-control" />
+                <input type="text" id="formApellido" class="form-control" />
                 <label class="form-label" for="formApellido">Apellido</label>
             </div>
         </div>
@@ -23,13 +23,13 @@
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="form-outline">
-                <input type="text" id="formUserName" name="username" class="form-control" />
+                <input type="email" id="formUserName" class="form-control" />
                 <label class="form-label" for="formUserName">Nombre de Usuario</label>
             </div>
         </div>
         <div class="col-md-8 mb-4">
             <div class="form-outline">
-                <input type="email" id="form3Example3" name="email" class="form-control" />
+                <input type="email" id="form3Example3" class="form-control" />
                 <label class="form-label" for="form3Example3">Email </label>
             </div>
         </div>
@@ -39,7 +39,7 @@
 
     <!-- /* El usuario ingresar una contraseña. */ -->
     <div class="form-outline mb-4">
-        <input type="password" id="form3Example4" name="password" class="form-control" />
+        <input type="password" id="form3Example4" class="form-control" />
         <label class="form-label" for="form3Example4">Contraseña</label>
     </div>
 

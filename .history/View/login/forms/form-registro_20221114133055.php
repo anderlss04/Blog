@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="form-outline">
-                <input type="text" id="formUserName" name="username" class="form-control" />
+                <input type="email" id="formUserName" name="username" class="form-control" />
                 <label class="form-label" for="formUserName">Nombre de Usuario</label>
             </div>
         </div>
@@ -39,7 +39,7 @@
 
     <!-- /* El usuario ingresar una contraseña. */ -->
     <div class="form-outline mb-4">
-        <input type="password" id="form3Example4" name="password" class="form-control" />
+        <input type="password" id="form3Example4" name="" class="form-control" />
         <label class="form-label" for="form3Example4">Contraseña</label>
     </div>
 
