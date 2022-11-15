@@ -101,7 +101,7 @@ require $lin[0]['ruta'];
                                     </div>
 
                                     <input type="text" name="user_id" value="<?php echo $user_id; ?>" style="visibility: hidden;">
-                                    <input type="text" name="username" value="<?php echo $username; ?>" style="visibility: hidden;">
+                                    <input type="text" name="user_id" value="<?php echo $user_id; ?>" style="visibility: hidden;">
 
 
                                     <div class="publicar-inner-content-footer">

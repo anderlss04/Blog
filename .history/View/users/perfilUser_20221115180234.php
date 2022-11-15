@@ -29,7 +29,7 @@ var_dump($escaped_link);
 
 
 <?php
-
+var_dump($lin);
 require '../../View/components/footer.php';
 require $lin[0]['ruta'];
 ?>
@@ -92,17 +92,13 @@ require $lin[0]['ruta'];
 
                                     <div class="form-group">
                                         <label for="descripcion">Descripcion</label>
-                                        <textarea class="form-control" name="content" id="descripcion" rows="3"></textarea>
+                                        <textarea class="form-control" name="descripcion" id="descripcion" rows="3"></textarea>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="image">Imagen</label>
-                                        <input accept="image/*" type="file" name="image" id="imagen" class="form-control" placeholder="Imagen" aria-describedby="helpId">
+                                        <label for="imagen">Imagen</label>
+                                        <input type="file" name="imagen" id="imagen" class="form-control" placeholder="Imagen" aria-describedby="helpId">
                                     </div>
-
-                                    <input type="text" name="user_id" value="<?php echo $user_id; ?>" style="visibility: hidden;">
-                                    <input type="text" name="username" value="<?php echo $username; ?>" style="visibility: hidden;">
-
 
                                     <div class="publicar-inner-content-footer">
                                         <button type="submit" class="btn btn-primary">Publicar</button>

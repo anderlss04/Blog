@@ -9,9 +9,9 @@ $con = new M_Posts();
 
 $title = $_POST['title'];
 $brief = "";
-$content = $_POST['content'];
+$content = $_POST['contents'];
 $image = $_FILES['image']['tmp_name'];
-$created_at = date("Y-m-d-H-i-s");
+$created_at = date("Y-m-d-");
 $status = "1";
 $user_id = $_POST['user_id'];
 $username = $_POST['username'];

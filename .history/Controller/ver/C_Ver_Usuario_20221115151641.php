@@ -8,7 +8,6 @@ $con = new M_Usuario();
 
 $usuario = $con->getUser($_GET['username']);
 
-
 $username = $usuario['username'];
 $password = $usuario['password'];
 $email = $usuario['email'];
@@ -18,7 +17,7 @@ $active = $usuario['active'];
 $first_name = $usuario['first_name'];
 $last_name = $usuario['last_name'];
 $rol = $usuario['rol'];
-$user_id = $usuario['id'];
+$user_id = $usuario['userd'];
 
 
 $con->close();
