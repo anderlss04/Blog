@@ -20,6 +20,7 @@ if (mysqli_num_rows($result) > 0) {
 
     $sql = "UPDATE users SET last_login = NOW() WHERE username = '$user'";
     $result = mysqli_query($conn, $sql);
+    
 
     // print_r("Bienvenido - " . $user);
     header('Location: ../View/users/perfilUser.php?username=' . $user);

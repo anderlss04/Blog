@@ -18,9 +18,7 @@ if (mysqli_num_rows($result) > 0) {
     session_start();
     $_SESSION['user'] = $user;
 
-    $sql = "UPDATE users SET last_login = NOW() WHERE username = '$user'";
-    $result = mysqli_query($conn, $sql);
-
+    
     // print_r("Bienvenido - " . $user);
     header('Location: ../View/users/perfilUser.php?username=' . $user);
     print_r('error usuario o contraseña ');
