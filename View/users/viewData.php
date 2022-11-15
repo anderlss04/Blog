@@ -1,5 +1,5 @@
 <h1 class="w-100 text-center">Mis datos</h1>
-
+<!-- <?php// $rutaForm = $intancia->RutaLinks() ?> -->
 <form action="<?php echo $var[0]['ruta'] ?> " method="POST" class="text-center">
     <!--  Creación de una fila con dos columnas. La primera columna es para el nombre y la segunda
            columna es para el apellido. * -->
