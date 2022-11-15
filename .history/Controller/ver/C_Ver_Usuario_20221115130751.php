@@ -17,7 +17,7 @@ $active = $usuario['active'];
 $first_name = $usuario['first_name'];
 $last_name = $usuario['last_name'];
 $rol = $usuario['rol'];
-$user_id = $usuario['userId'];
+$user_id
 
 
 $con->close();

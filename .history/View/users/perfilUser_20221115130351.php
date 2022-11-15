@@ -17,10 +17,6 @@ $var = $intancia->RutaLinks(
     $escaped_link,
     '../Controller/modificar/C_Modificar_Usuario.php'
 );
-$publicar = $intancia->RutaLinks(
-    $escaped_link,
-    '../Controller/crear/C_Crear_Post.php'
-);
 var_dump($lin);
 var_dump($escaped_link);
 ?>

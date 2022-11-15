@@ -31,28 +31,10 @@ class M_Comments extends Conexion{
         $query = parent::con()->query("SELECT * FROM users WHERE username = '$user'");
 
         while($fila = $query->fetch_assoc()){
-            $username = $fila['username'];
+            $user_id = $fila['id'];
         }
 
-        $query = parent::con()->query("SELECT * FROM comments WHERE name = '$username'");
-
-        $retorno = [];
-
-        while($fila = $query->fetch_assoc()){
-            $retorno[] = $fila;
-        }
-
-        return $retorno;
-    }
-
-    public function getCommentsPost($post){
-        $query = parent::con()->query("SELECT * FROM posts WHERE title = '$post'");
-
-        while($fila = $query->fetch_assoc()){
-            $post_id = $fila['id'];
-        }
-
-        $query = parent::con()->query("SELECT * FROM comments WHERE postId = '$post_id'");
+        $query = parent::con()->query("SELECT * FROM comments WHERE userId = '$user_id'");
 
         $retorno = [];
 

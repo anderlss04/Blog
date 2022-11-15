@@ -17,10 +17,6 @@ $var = $intancia->RutaLinks(
     $escaped_link,
     '../Controller/modificar/C_Modificar_Usuario.php'
 );
-$publicar = $intancia->RutaLinks(
-    $escaped_link,
-    '../Controller/crear/C_Crear_Post.php'
-);
 var_dump($lin);
 var_dump($escaped_link);
 ?>
@@ -45,10 +41,12 @@ require $lin[0]['ruta'];
         <div class="opcion">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Datos Generales</button>
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Datos Generales</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Publicaciones</button>
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">Publicaciones</button>
                 </li>
                 <li>
                     <button class="nav-link" id="publicar-tab" data-bs-toggle="tab" data-bs-target="#publicar" type="button" role="tab" aria-controls="publicar" aria-selected="false">Publicar</button>
@@ -83,8 +81,7 @@ require $lin[0]['ruta'];
                                 <h1>Publicar</h1>
                             </div>
                             <div class="publicar-inner-content-body">
-
-                                <form action="<?php echo $publicar[0]['ruta']; ?>" method="POST" enctype="multipart/form-data">
+                                <form action="<?php echo $var[0]['ruta']; ?>" method="POST" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="titulo">Titulo</label>
                                         <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Titulo" aria-describedby="helpId">
@@ -101,22 +98,27 @@ require $lin[0]['ruta'];
                                     </div>
 
                                     <div class="publicar-inner-content-footer">
-                                        <button type="submit" class="btn btn-primary">Publicar</button>
-                                    </div>
+                                <button type="submit" class="btn btn-primary">Publicar</button>
+                            </div>
                                 </form>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            
+
+                                    
+
+
+
+            
+
+
+
         </div>
     </div>
 </div>
 
 
-
 <script>
-    document.getElementById("logout-tab").addEventListener("click", function() {
-        window.location.href = "../../Controller/Logout.php";
-    });
+document.getElementById("logout-tab").addEventListener("click", function() {
+    window.location.href = "../../Controller/Logout.php";
+});
 </script>

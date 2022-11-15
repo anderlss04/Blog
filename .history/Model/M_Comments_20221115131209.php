@@ -34,7 +34,7 @@ class M_Comments extends Conexion{
             $username = $fila['username'];
         }
 
-        $query = parent::con()->query("SELECT * FROM comments WHERE name = '$username'");
+        $query = parent::con()->query("SELECT * FROM comments WHERE userId = '$user_id'");
 
         $retorno = [];
 
