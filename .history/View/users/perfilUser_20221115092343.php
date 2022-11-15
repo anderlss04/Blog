@@ -38,7 +38,7 @@
                         <?php $var = $intancia->RutaLinks($escaped_link, "Controller/modificar/C_Modificar_Usuario.php")  ?>
 
                         <form action="<?php echo $var[0]['ruta'] ?> " method="post">
-                        <?php if(!empty($_GET['datos'])){
+                        <?php if($_GET['datos'] != ""){
                             echo "<p class='text-danger'>Datos modificados</p>";
                         } ?>
                             <div class="form-group">

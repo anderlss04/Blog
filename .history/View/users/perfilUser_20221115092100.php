@@ -38,9 +38,6 @@
                         <?php $var = $intancia->RutaLinks($escaped_link, "Controller/modificar/C_Modificar_Usuario.php")  ?>
 
                         <form action="<?php echo $var[0]['ruta'] ?> " method="post">
-                        <?php if(!empty($_GET['datos'])){
-                            echo "<p class='text-danger'>Datos modificados</p>";
-                        } ?>
                             <div class="form-group">
                                 <label for="username">Nombre de Usuario</label>
                                 <input value="<?php echo $username;?>" readonly required id="username" name="username" placeholder="nombre de Usuario" type="text" class="form-control">
@@ -89,5 +86,16 @@
             window.location.href = "../../Controller/Logout.php";
         });
 
-        
+        function comprobarInputs() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var first_name = document.getElementById("namae").value;
+            var last_name = document.getElementById("lastname").value;
+            if (username == "" || email == "" || first_name == "" || last_name == "") {
+                alert("Todos los campos son obligatorios");
+                return false;
+            } else {
+                return true;
+            }
+        }
     </script>

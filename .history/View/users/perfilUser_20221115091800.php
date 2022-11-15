@@ -38,9 +38,6 @@
                         <?php $var = $intancia->RutaLinks($escaped_link, "Controller/modificar/C_Modificar_Usuario.php")  ?>
 
                         <form action="<?php echo $var[0]['ruta'] ?> " method="post">
-                        <?php if(!empty($_GET['datos'])){
-                            echo "<p class='text-danger'>Datos modificados</p>";
-                        } ?>
                             <div class="form-group">
                                 <label for="username">Nombre de Usuario</label>
                                 <input value="<?php echo $username;?>" readonly required id="username" name="username" placeholder="nombre de Usuario" type="text" class="form-control">
@@ -58,7 +55,7 @@
                                 <input value="<?php echo $last_name;?>" id="lastname" name="last_name" placeholder="nombre de Usuario" type="text" class="form-control">
                             </div>
                             <div class="form-group text-center p-5">
-                                <button id="submit" name="submit" type="submit" class="btn  boton" onclick="comprobarInputs()">Editar</button>
+                                <button id="submit" name="submit" type="submit" class="btn  boton">Editar</button>
                             </div>
                         </form>
                     </div>
@@ -89,5 +86,6 @@
             window.location.href = "../../Controller/Logout.php";
         });
 
-        
+        document.getElementById("submit")
+
     </script>
