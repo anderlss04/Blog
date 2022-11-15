@@ -8,6 +8,8 @@ $con = new M_Usuario();
 
 $usuario = $con->getUser($_GET['username']);
 
+var_dump($usuario);
+
 $username = $usuario['username'];
 $password = $usuario['password'];
 $email = $usuario['email'];

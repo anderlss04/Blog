@@ -22,6 +22,6 @@ $usuario = new Usuario( $username, $password, $email, $created_on, $last_login, 
 
 $con->modUsuario($usuario);
 
-header("Location: ../../View/users/perfilUser.php?username=$username");
+header("Location: ../View/users/perfilUser.php");
 
 ?>

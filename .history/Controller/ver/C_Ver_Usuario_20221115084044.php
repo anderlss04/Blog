@@ -2,11 +2,13 @@
 
 use Model\M_Usuario;
 
-require_once('../../Model/M_Usuario.php');
+require_once('../../Model/M_Posts.php');
 
 $con = new M_Usuario();
 
-$usuario = $con->getUser($_GET['username']);
+$usuario = $con->getUser($_GET('username'));
+
+// var_dump($usuario);
 
 $username = $usuario['username'];
 $password = $usuario['password'];

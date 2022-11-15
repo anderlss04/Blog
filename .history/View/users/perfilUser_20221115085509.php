@@ -37,7 +37,7 @@
                         <form action="<?php echo $var[0]['ruta'] ?> " method="post">
                             <div class="form-group">
                                 <label for="username">Nombre de Usuario</label>
-                                <input value="<?php echo $username;?>" readonly required id="username" name="username" placeholder="nombre de Usuario" type="text" class="form-control">
+                                <input value="<?php echo $username;?>" required id="username" name="username" placeholder="nombre de Usuario" type="text" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="email">Correo</label>

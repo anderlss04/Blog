@@ -62,7 +62,7 @@ class M_Usuario extends Conexion{
     public function modUsuario(Usuario $usuario){
         $sentencia = parent::con()->prepare("UPDATE users SET email = ?, first_name = ?, last_name = ? WHERE username = ?");
         
-        $sentencia->bind_param("ssss", $usuario->getEmail(), $usuario->getFirst_name(), $usuario->getLast_name(), $usuario->getUsername());
+        $sentencia->bind_param("sssssssss", $usuario->getPassword(), $usuario->getEmail(), $usuario->getCreated_on(), $usuario->getLast_login(), $usuario->getActive(), $usuario->getFirst_name(), $usuario->getLast_name(), $usuario->getRol(), $usuario->getUsername());
         
         $sentencia->execute();
         $sentencia->close();

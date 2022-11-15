@@ -4,7 +4,7 @@ use Model\M_Usuario;
 use Model\Usuario;
 
 require_once('../../Model/M_Usuario.php');
-require_once('../../Model/M_Usuario.php');
+require_once('../Model/M_Usuario.php');
 
 $con = new M_Usuario();
 
@@ -22,6 +22,6 @@ $usuario = new Usuario( $username, $password, $email, $created_on, $last_login, 
 
 $con->modUsuario($usuario);
 
-header("Location: ../../View/users/perfilUser.php?username=$username");
+header("Location: ../View/usuarios.php");
 
 ?>

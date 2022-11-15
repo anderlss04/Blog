@@ -5,7 +5,6 @@
     require '../../Controllers/RutasController.php';
     $valor = $intancia->Vistas($escaped_link);
     require '../../Controller/ver/C_Ver_Post_User.php';
-    require '../../Controller/ver/C_Ver_Usuario.php';
     ?>
 
     <div class="content-img W-100  d-flex justify-content-center align-items-center">
@@ -32,24 +31,24 @@
 
                     <div class="datos-perfil ">
 
-                        <?php $var = $intancia->RutaLinks($escaped_link, "Controller/modificar/C_Modificar_Usuario.php")  ?>
+                        <?php $var = $intancia->RutaLinks($escaped_link, "Controller/ver/C_Ver_Usuario.php")  ?>
 
                         <form action="<?php echo $var[0]['ruta'] ?> " method="post">
                             <div class="form-group">
                                 <label for="username">Nombre de Usuario</label>
-                                <input value="<?php echo $username;?>" readonly required id="username" name="username" placeholder="nombre de Usuario" type="text" class="form-control">
+                                <input value="<?php echo $_G ?>" required id="username" name="username" placeholder="nombre de Usuario" type="text" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="email">Correo</label>
-                                <input value="<?php echo $email;?>" id="email" name="email" placeholder="nombre de Usuario" type="text" class="form-control">
+                                <input id="email" name="email" placeholder="nombre de Usuario" type="text" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="namae">Nombre</label>
-                                <input value="<?php echo $first_name;?>" id="namae" name="first_name" placeholder="nombre de Usuario" type="text" class="form-control">
+                                <input id="namae" name="namae" placeholder="nombre de Usuario" type="text" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="lastname">Apellido</label>
-                                <input value="<?php echo $last_name;?>" id="lastname" name="last_name" placeholder="nombre de Usuario" type="text" class="form-control">
+                                <input id="lastname" name="lastname" placeholder="nombre de Usuario" type="text" class="form-control">
                             </div>
                             <div class="form-group text-center p-5">
                                 <button name="submit" type="submit" class="btn  boton">Editar</button>

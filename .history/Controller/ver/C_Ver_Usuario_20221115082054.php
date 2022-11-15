@@ -2,11 +2,13 @@
 
 use Model\M_Usuario;
 
-require_once('../../Model/M_Usuario.php');
+require_once('../Model/M_Usuario.php');
 
 $con = new M_Usuario();
 
-$usuario = $con->getUser($_GET['username']);
+$usuario = $con->getUser($('username'));
+
+// var_dump($usuario);
 
 $username = $usuario['username'];
 $password = $usuario['password'];
@@ -21,4 +23,4 @@ $rol = $usuario['rol'];
 
 $con->close();
 
-// require_once('../View/users/user.php');
+require_once('../View/users/user.php');
