@@ -1,8 +1,24 @@
-<link rel="stylesheet" href="../../src/css/user.css">
-<?php require '../components/scripts.php'; ?>
 <?php
-    require '../../Controller/ver/C_Ver_Post_User.php';
-    ?>
+require '../../Controller/ver/C_Ver_Post_User.php';
+
+require '../../View/components/header.php';
+include '../../Controllers/RutasController.php';
+
+
+require '../components/scripts/links.php'
+?>
+
+<head>
+    <link rel="stylesheet" href="../../src/css/user.css">
+</head>
+
+<?php
+$valor = $intancia->rutaLinks($escaped_link, 'components/posts.php');
+?>
+<script src="src/js/main.js"></script>
+
+
+<?php require '../../View/components/footer.php' ?>
 
 <div class="content-img W-100  d-flex justify-content-center align-items-center">
     <div class="content-img-inner d-flex justify-content-center align-items-center">
@@ -29,31 +45,7 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
                 <div class="datos-perfil ">
-                    <form>
-                        <div class="form-group">
-                            <label for="username">Nombre de Usuario</label>
-                            <input id="username" name="username" placeholder="nombre de Usuario" type="text"
-                                class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo</label>
-                            <input id="email" name="email" placeholder="nombre de Usuario" type="text"
-                                class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="namae">Nombre</label>
-                            <input id="namae" name="namae" placeholder="nombre de Usuario" type="text"
-                                class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="lastname">Apellido</label>
-                            <input id="lastname" name="lastname" placeholder="nombre de Usuario" type="text"
-                                class="form-control">
-                        </div>
-                        <div class="form-group text-center p-5">
-                            <button name="submit" type="submit" class="btn  boton">Editar</button>
-                        </div>
-                    </form>
+                <?php require 'viewData.php' ?>
                 </div>
 
             </div>
@@ -62,8 +54,9 @@
                     <div id="content-main" class="content  col-xl-12 d-flex justify-content-center h-100 ">
                         <div id="publicacion" class=" col-xl-12  w-100">
 
-                            <?php foreach ($posts as $post)
-                                    require 'postUser.php' ?>
+                            <?php
+                            require $valor[0]['ruta'];
+                           ?>
                         </div>
                     </div>
 

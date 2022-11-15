@@ -76,6 +76,7 @@ main {
 #content-main {
     height: 100%;
     overflow: scroll;
+    overflow-x: hidden!important;
     scrollbar-width: thin;
 }
 
