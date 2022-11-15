@@ -1,7 +1,6 @@
 <?php $var = $intancia->RutaLinks($escaped_link, "Controller/crear/C_Crear_Usuario.php" )  ?>
 
-<form action="<?php echo $var[0]['ruta'] ?> " method="post">
-   <?php var_dump($valor)?>
+<form action="<?php echo $var[0]['ruta'] ?> " method="POST">
     <!--  Creación de una fila con dos columnas. La primera columna es para el nombre y la segunda
            columna es para el apellido. * -->
 
@@ -29,8 +28,8 @@
         </div>
         <div class="col-md-8 mb-4">
             <div class="form-outline">
-                <input type="email" id="form3Example3" name="email" class="form-control" />
-                <label class="form-label" for="form3Example3">Email </label>
+                <input type="email" id="formEmail" name="email" class="form-control" />
+                <label class="form-label" for="formEmail">Email </label>
             </div>
         </div>
     </div>
@@ -39,8 +38,8 @@
 
     <!-- /* El usuario ingresar una contraseña. */ -->
     <div class="form-outline mb-4">
-        <input type="password" id="form3Example4" name="password" class="form-control" />
-        <label class="form-label" for="form3Example4">Contraseña</label>
+        <input type="password" id="formPass" name="password" class="form-control" />
+        <label class="form-label" for="formPass">Contraseña</label>
     </div>
 
 
