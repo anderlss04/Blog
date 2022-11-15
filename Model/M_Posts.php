@@ -20,14 +20,23 @@ class M_Posts extends Conexion{
             return  $retorno;
         }
     
-        public function getPost($title){
+        public function getPost($idPost){
+            $query = parent::con()->query("SELECT users.username, users.email
+            FROM users
+            INNER JOIN posts ON users.id= posts.user_id  WHERE posts.user_id = $idPost;
+            ");
+    
+            $fila = $query->fetch_array(); 
+            return $fila;
+        }
+        
+        public function getUserPost($title){
             $query = parent::con()->query("SELECT * FROM posts WHERE id = '$title'");
     
             while($fila = $query->fetch_assoc()){
                 return $fila;
             }
         }
-
         public function getPostsUser($user){
             $query = parent::con()->query("SELECT * FROM users WHERE username = '$user'");
 
@@ -35,7 +44,7 @@ class M_Posts extends Conexion{
                 $user_id = $fila['id'];
             }
 
-            $query = parent::con()->query("SELECT * FROM posts WHERE userId = '$user_id'");
+            $query = parent::con()->query("SELECT * FROM posts WHERE id = '$user_id'");
     
             $retorno = [];
     
@@ -51,7 +60,7 @@ class M_Posts extends Conexion{
         public function insertPost(Posts $post){
             $sentencia = parent::con()->prepare("INSERT INTO posts(title, brief, content, image, created_at, status, userId) VALUES (?,?,?,?,?,?,?)");
     
-            $sentencia->bind_param("ssssssi", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id());
+            $sentencia->bind_param("sssbssi", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id());
     
             $sentencia->execute();
             $sentencia->close();
@@ -69,7 +78,7 @@ class M_Posts extends Conexion{
         public function modPost(Posts $post){
             $sentencia = parent::con()->prepare("UPDATE posts SET title = ?, brief = ?, content = ?, image = ?, created_at = ?, status = ?, userId = ? WHERE title = ?");
     
-            $sentencia->bind_param("ssssssis", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id(), $post->getTitle());
+            $sentencia->bind_param("sssbssis", $post->getTitle(), $post->getBrief(), $post->getContent(), $post->getImage(), $post->getCreated_at(), $post->getStatus(), $post->getUser_id(), $post->getTitle());
     
             $sentencia->execute();
             $sentencia->close();

@@ -19,7 +19,7 @@ $titulo = $intancia->Titulos($escaped_link);
 
 <body>
 
-    <section class="text-center text-lg-start">
+    <section class=" form-portada text-center text-lg-start">
         <div class="container py-4">
             <div class="row g-0 align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
