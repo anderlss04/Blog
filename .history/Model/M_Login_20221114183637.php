@@ -21,12 +21,21 @@ class M_Login extends Conexion
         // return $datos;
     }
 
-    public function recuperarContraseña($email){
-        $query = parent::con()->query("SELECT * FROM users WHERE email = '$email'");
+    public function recuperarContraseña($email)
+    {
+        $con = mysqli_connect('localhost', 'root', '', 'jase');
 
-        while($fila = $query->fetch_assoc()){
-            return $fila;
+        $datos = mysqli_query(
+            $con,
+            "SELECT * FROM users WHERE email = '$email' "
+        );
+        // $datos = array_merge($datos, $datos);
+        if (!$datos) {
+            return mysqli_error($con);
+        } else {
+            return 'boo';
         }
+        // return $datos;
     }
 
 }

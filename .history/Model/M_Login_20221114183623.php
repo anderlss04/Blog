@@ -21,13 +21,7 @@ class M_Login extends Conexion
         // return $datos;
     }
 
-    public function recuperarContraseña($email){
-        $query = parent::con()->query("SELECT * FROM users WHERE email = '$email'");
-
-        while($fila = $query->fetch_assoc()){
-            return $fila;
-        }
-    }
+    public function
 
 }
 
