@@ -1,6 +1,5 @@
-
 <form>
- 
+
     <div class="form-outline mb-4">
         <input type="text" id="formUsername" class="form-control" />
         <label class="form-label" for="formUsername">Email o Nombre de Usuario </label>
@@ -23,8 +22,8 @@
     </button>
 
     <div class="text-center">
-        <p class="font-weight-light">He olvidado mi Contraseña.<a href="recuperar.php">Recuperar Contraseña.</a><br> 
-        <a href="registrarse.php">Registrarme</a>
-    </p>
+        <p class="font-weight-light">He olvidado mi Contraseña.<a href="recuperar.php">Recuperar Contraseña.</a><br>
+            <a href="registrarse.php">Registrarme</a>
+        </p>
     </div>
 </form>
