@@ -12,13 +12,19 @@
 
    <?php
    $valor = $intancia->rutaLinks($escaped_link, 'components/posts.php');
-   $lin = $intancia->RutaLinks($escaped_link, 'components/scripts/links.php');
+   $lin = $intancia->RutaLinks(
+       $escaped_link,
+       'View/components/scripts/links.php'
+   );
+   var_dump($lin);
+   var_dump($escaped_link);
    ?>
 
    <script src="src/js/main.js"></script>
 
 
    <?php
+   var_dump($lin);
    require '../../View/components/footer.php';
    require $lin[0]['ruta'];
    ?>

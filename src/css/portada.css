@@ -197,10 +197,23 @@ a:hover {
 
 /* fin post */
 
+@media (max-width: 1400px) {
+    #container-main {
+        width: 100%!important;
+        /* max-width: 300px; */
+    }
+    #content-rigth {
+        display: none!important;
+    }
+}
+
 @media (max-width: 700px) {
     #container-main {
         width: 100%!important;
         /* max-width: 300px; */
+    }
+    #content-rigth {
+        display: none!important;
     }
     .carta {
         min-width: 400px;
