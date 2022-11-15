@@ -49,6 +49,10 @@ require $lin[0]['ruta'];
                         type="button" role="tab" aria-controls="profile" aria-selected="false">Publicaciones</button>
                 </li>
                 <li>
+                    <button class="nav-link" id="publicar-tab" data-bs-toggle="tab" data-bs-target="#publicar"
+                        type="button" role="tab" aria-controls="publicar" aria-selected="false">Publicar</button>
+                </li>
+                <li>
                     <button class="nav-link" id="publicar-tab" data-bs-toggle="tab" data-bs-target="#publicar" type="button" role="tab" aria-controls="publicar" aria-selected="false">Publicar</button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -98,14 +102,7 @@ require $lin[0]['ruta'];
                                     </div>
 
                                     <div class="form-group
-                                    ">
-                                        <label for="categoria">Categoria</label>
-                                        <select class="form-control" name="categoria" id="categoria">
-                                            <option value="1">Categoria 1</option>
-                                            <option value="2">Categoria 2</option>
-                                            <option value="3">Categoria 3</option>
-                                        </select>
-                                    </div>
+                                    
                                     
 
 
