@@ -1,6 +1,8 @@
 <?php $var = $intancia->RutaLinks($escaped_link, "Controller/Login.php" )  ?>
+<?php $enlace1 = $intancia->RutaLinks($escaped_link, "View/login/recuperar.php" )  ?>
+<?php $enlace2 = $intancia->RutaLinks($escaped_link, "View/login/recuperar.php" )  ?>
 
-<form action="<?php echo $var[0]['ruta'] ?> " method="post">
+<form action="<?php echo $var[0]['ruta'] ?> " method="POST">
  
     <div class="form-outline mb-4">
         <input type="text" id="formUsername" name="nombre" class="form-control" />
@@ -12,18 +14,13 @@
         <label class="form-label"  for="formPassWord">Contraseña</label>
     </div>
 
-    <div class="form-check d-flex justify-content-center mb-4">
-        <input class="form-check-input me-2" type="checkbox" value="" id="formRecordar" checked />
-        <label class="form-check-label" for="formRecordar">
-            Desea que su usuario sea recordado
-        </label>
-    </div>
+   
 
-    <input type="submit" class="btn btn-primary btn-block mb-4" value="Enviar"/>
+    <input type="submit" class="boton btn-block mb-4" value="Enviar"/>
 
     <div class="text-center">
-        <p class="font-weight-light">He olvidado mi Contraseña.<a href="recuperar.php">Recuperar Contraseña.</a><br> 
-        <a href="registrarse.php">Registrarme</a>
+        <p class="font-weight-light">He olvidado mi Contraseña.<a href=" <?php echo$enlace1[0]['ruta'] ?>">Recuperar Contraseña.</a><br> 
+        <a href="<?php echo $enlace2[0]['ruta'] ?>">Registrarme</a>
     </p>
     </div>
 </form>

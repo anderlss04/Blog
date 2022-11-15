@@ -36,6 +36,7 @@ class RutasController
     }
     public function Relative($longitud ){
         $rLinks="";
+       if($longitud>2){$longitud--;}
         for($i =1; $i<$longitud; $i++){
             $rLinks = $rLinks
             . "../";

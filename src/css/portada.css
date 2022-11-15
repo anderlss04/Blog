@@ -11,6 +11,7 @@
 }
 
 body {
+    overflow: hidden;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -20,6 +21,12 @@ body {
     width: 500px;
     height: 500px;
     background-color: aqua;
+}
+
+#publicacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #navbar-header {
@@ -93,6 +100,12 @@ main {
 #content-rigth {
     max-width: 30%;
     background-color: white!important;
+    height: 90%;
+}
+
+#contentPer {
+    max-width: 30%;
+    background-color: white!important;
     height: 100%;
 }
 
@@ -103,14 +116,114 @@ main {
     align-items: center;
 } */
 
+
+/* posts */
+
+.bg-image {
+    text-align: center;
+    border-bottom: 1px solid rgb(197, 194, 194);
+}
+
+.carta {
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.carta:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-out;
+    margin-top: 50px!important;
+    margin-bottom: 50px!important;
+}
+
+.icons {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.icons i {
+    margin: 0 5px;
+}
+
+.icons i span {
+    font-size: 10px;
+    /* position: absolute; */
+    left: 0;
+}
+
+.icons i:first-child:hover {
+    color: rgba(33, 136, 5, 0.538);
+    transform: scale(.9);
+}
+
+.icons i:last-child:hover {
+    color: rgba(136, 68, 5, 0.538);
+    transform: scale(.9);
+}
+
+.form-logs .card {
+    box-shadow: 5px 5px 5px 5px var(--color-jace-fondo);
+    width: 70%!important;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.form-logs .card input:first-child {
+    margin-top: 15px;
+}
+
 .boton {
     background-color: var(--color-jace-primary)!important;
-    color: var(--color-jace-fondo)!important;
+    color: white!important;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .boton:hover {
-    background-color: var(--color-jace-fondo)!important;
+    background-color: white!important;
     color: var(--color-jace-primary)!important;
     font-weight: bold;
     border: solid 1px var(--color-jace-primary)!important;
+}
+
+a:hover {
+    color: #9E0D09;
+    font-weight: bolder;
+}
+
+
+/* fin post */
+
+@media (max-width: 700px) {
+    #container-main {
+        width: 100%!important;
+        /* max-width: 300px; */
+    }
+    .carta {
+        min-width: 400px;
+        font-size: 15px;
+    }
+    .card-footer {
+        font-size: 10px;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        font-weight: bolder;
+        width: max-content;
+    }
+    .icons i span {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .carta {
+        min-width: 200px;
+        font-size: 15px;
+    }
 }

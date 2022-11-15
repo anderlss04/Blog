@@ -20,14 +20,23 @@ class M_Posts extends Conexion{
             return  $retorno;
         }
     
-        public function getPost($title){
+        public function getPost($idPost){
+            $query = parent::con()->query("SELECT users.username, users.email
+            FROM users
+            INNER JOIN posts ON users.id= posts.user_id  WHERE posts.user_id = $idPost;
+            ");
+    
+            $fila = $query->fetch_array(); 
+            return $fila;
+        }
+        
+        public function getUserPost($title){
             $query = parent::con()->query("SELECT * FROM posts WHERE id = '$title'");
     
             while($fila = $query->fetch_assoc()){
                 return $fila;
             }
         }
-
         public function getPostsUser($user){
             $query = parent::con()->query("SELECT * FROM users WHERE username = '$user'");
 
@@ -35,7 +44,7 @@ class M_Posts extends Conexion{
                 $user_id = $fila['id'];
             }
 
-            $query = parent::con()->query("SELECT * FROM posts WHERE userId = '$user_id'");
+            $query = parent::con()->query("SELECT * FROM posts WHERE id = '$user_id'");
     
             $retorno = [];
     

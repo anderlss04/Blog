@@ -9,7 +9,21 @@
     }
 }
 
+a:hover {
+    color: #9E0D09!important;
+    font-weight: bolder;
+}
+
+label {
+    font-weight: lighter;
+    color: rgb(102, 99, 99);
+}
+
 .formulario {
     background: hsla(0, 0%, 100%, 0.55)!important;
     backdrop-filter: blur(30px)!important;
+}
+
+.form-portada img {
+    max-width: 590px;
 }
