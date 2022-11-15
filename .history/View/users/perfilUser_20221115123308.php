@@ -70,13 +70,7 @@ require $lin[0]['ruta'];
                             </div>
                             <div class="publicar-inner-content-body">
                                 <form action="<?php echo $var[0]['ruta']; ?>" method="POST" enctype="multipart/form-data">
-                                    <div class="form-group">
-                                        <label for="titulo">Titulo</label>
-                                        <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Titulo" aria-describedby="helpId">
-
-
-
-
+                                    <div class="form-group
             
 
 

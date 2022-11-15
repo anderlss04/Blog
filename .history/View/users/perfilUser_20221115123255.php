@@ -61,22 +61,7 @@ require $lin[0]['ruta'];
                 </div>
             </div>
 
-            <div class="tab-pane fade" id="publicar" role="tabpanel" aria-labelledby="publicar-tab">
-                <div class="publicar">
-                    <div class="publicar-inner">
-                        <div class="publicar-inner-content">
-                            <div class="publicar-inner-content-header">
-                                <h1>Publicar</h1>
-                            </div>
-                            <div class="publicar-inner-content-body">
-                                <form action="<?php echo $var[0]['ruta']; ?>" method="POST" enctype="multipart/form-data">
-                                    <div class="form-group">
-                                        <label for="titulo">Titulo</label>
-                                        <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Titulo" aria-describedby="helpId">
-
-
-
-
+            
             
 
 

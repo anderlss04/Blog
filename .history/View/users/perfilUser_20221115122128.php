@@ -37,10 +37,10 @@ require $lin[0]['ruta'];
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Publicaciones</button>
                 </li>
                 <li>
-                    <button class="nav-link" id="publicar-tab" data-bs-toggle="tab" data-bs-target="#publicar" type="button" role="tab" aria-controls="publicar" aria-selected="false">Publicar</button>
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="logout-tab" data-bs-toggle="tab" data-bs-target="#logout" type="button" role="tab" aria-controls="logout" aria-selected="false">Logout</button>
+                    <button class="nav-link" id="logout-tab" data-bs-toggle="tab" data-bs-target="#logout" type="button" role="tab" aria-controls="contact" aria-selected="false">Logout</button>
                 </li>
             </ul>
         </div>
@@ -60,27 +60,6 @@ require $lin[0]['ruta'];
                     </div>
                 </div>
             </div>
-
-            <div class="tab-pane fade" id="publicar" role="tabpanel" aria-labelledby="publicar-tab">
-                <div class="publicar">
-                    <div class="publicar-inner">
-                        <div class="publicar-inner-content">
-                            <div class="publicar-inner-content-header">
-                                <h1>Publicar</h1>
-                            </div>
-                            <div class="publicar-inner-content-body">
-                                <form action="<?php echo $var[0]['ruta']; ?>" method="POST" enctype="multipart/form-data">
-                                    <div class="form-group">
-                                        <label for="titulo">Titulo</label>
-                                        <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Titulo" aria-describedby="helpId">
-
-
-
-
-            
-
-
-
         </div>
     </div>
 </div>
