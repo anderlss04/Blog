@@ -23,8 +23,8 @@ $usuario = new Usuario($username, $password, $email, $created_on, $last_login, $
 $con->insertUsuario($usuario);
 
 if(!empty( $_POST['rol'])){
-    header('Location: ../../View/users/perfilUser.php?username='.$username);
-}else{
+    header('Location: ../../View/users/perfilUser.php?username='.$username)
+}else{;
     header('Location: ../../View/login/login.php');
 }
 

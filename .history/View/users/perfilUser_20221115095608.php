@@ -106,17 +106,17 @@
 
                                     <div class="form-group">
                                         <label for="lastname">Apellido</label>
-                                        <input value="" id="lastname" name="last_name" placeholder="Apellidos" type="text" class="form-control">
+                                        <input value="" id="lastname" name="last_name" placeholder="A" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="password">Contraseña</label>
-                                        <input value="" id="password" name="password" placeholder="Contraseña" type="text" class="form-control">
+                                        <input value="" id="password" name="password" placeholder="nombre de Usuario" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="rol">Rol</label>
-                                        <input value="" id="rol" name="rol" placeholder="Rol (admin o vacio)" type="text" class="form-control">
+                                        <input value="" id="rol" name="rol" placeholder="nombre de Usuario" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group text-center p-5">

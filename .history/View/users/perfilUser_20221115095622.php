@@ -111,12 +111,12 @@
 
                                     <div class="form-group">
                                         <label for="password">Contraseña</label>
-                                        <input value="" id="password" name="password" placeholder="Contraseña" type="text" class="form-control">
+                                        <input value="" id="password" name="password" placeholder="C" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="rol">Rol</label>
-                                        <input value="" id="rol" name="rol" placeholder="Rol (admin o vacio)" type="text" class="form-control">
+                                        <input value="" id="rol" name="rol" placeholder="nombre de Usuario" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group text-center p-5">

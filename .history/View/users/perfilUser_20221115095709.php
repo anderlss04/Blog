@@ -116,7 +116,7 @@
 
                                     <div class="form-group">
                                         <label for="rol">Rol</label>
-                                        <input value="" id="rol" name="rol" placeholder="Rol (admin o vacio)" type="text" class="form-control">
+                                        <input value="" id="rol" name="rol" placeholder="Rol " type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group text-center p-5">

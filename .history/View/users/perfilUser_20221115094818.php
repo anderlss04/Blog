@@ -63,7 +63,7 @@
                                 <input value="<?php echo $last_name; ?>" id="lastname" name="last_name" placeholder="nombre de Usuario" type="text" class="form-control">
                             </div>
                             <div class="form-group text-center p-5">
-                                <button id="submit" name="submit" type="submit" class="btn  boton">Editar</button>
+                                <button id="submit" name="submit" type="submit" class="btn  boton" >Editar</button>
                             </div>
                         </form>
                     </div>
@@ -86,9 +86,9 @@
                         <div id="content-main" class="content  col-xl-12 d-flex justify-content-center h-100 ">
                             <div id="crear usuarios" class=" col-xl-12  w-100">
 
-                                <?php $var = $intancia->RutaLinks($escaped_link, "Controller/crear/C_Crear_Usuario.php")  ?>
+                            <?php $var = $intancia->RutaLinks($escaped_link, "Controller/crear/C_Crear_Usuario.php" )  ?>
 
-                                <form action="<?php echo $var[0]['ruta'] ?> " method="post">
+<form action="<?php echo $var[0]['ruta'] ?> " method="post">
                                     <div class="form-group">
                                         <label for="username">Nombre de Usuario</label>
                                         <input value="" required id="username" name="username" placeholder="nombre de Usuario" type="text" class="form-control">
@@ -96,31 +96,31 @@
 
                                     <div class="form-group">
                                         <label for="email">Correo</label>
-                                        <input value="" id="email" name="email" placeholder="email" type="text" class="form-control">
+                                        <input value="" id="email" name="email" placeholder="nombre de Usuario" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="namae">Nombre</label>
-                                        <input value="" id="namae" name="first_name" placeholder="Nombre" type="text" class="form-control">
+                                        <input value="" id="namae" name="first_name" placeholder="nombre de Usuario" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="lastname">Apellido</label>
-                                        <input value="" id="lastname" name="last_name" placeholder="Apellidos" type="text" class="form-control">
+                                        <input value="" id="lastname" name="last_name" placeholder="nombre de Usuario" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="password">Contraseña</label>
-                                        <input value="" id="password" name="password" placeholder="Contraseña" type="text" class="form-control">
+                                        <input value="" id="password" name="password" placeholder="nombre de Usuario" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="rol">Rol</label>
-                                        <input value="" id="rol" name="rol" placeholder="Rol (admin o vacio)" type="text" class="form-control">
+                                        <input value="" id="rol" name="rol" placeholder="nombre de Usuario" type="text" class="form-control">
                                     </div>
 
                                     <div class="form-group text-center p-5">
-                                        <button id="submit" name="submit" type="submit" class="btn  boton">Crear</button>
+                                        <button id="submit" name="submit" type="submit" class="btn  boton" >Crear</button>
                                     </div>
 
                                 </form>

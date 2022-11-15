@@ -16,17 +16,12 @@ $last_login = date("Y-m-d");
 $active = 0;
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
-if( !empty( $_POST['rol']) ){$rol =  $_POST['rol']; }  else {$rol =  0; }
+if( $_POST['rol'] == 'admin' ) {$rol =  1; } else {$rol =  0 ;};
 
 $usuario = new Usuario($username, $password, $email, $created_on, $last_login, $active, $first_name, $last_name, $rol);
 
 $con->insertUsuario($usuario);
 
-if(!empty( $_POST['rol'])){
-    header('Location: ../../View/users/perfilUser.php?username='.$username);
-}else{
-    header('Location: ../../View/login/login.php');
-}
-
+header('Location: ../../View/login/login.php');
 
 ?>
