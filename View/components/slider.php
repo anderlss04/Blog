@@ -1,16 +1,18 @@
 <?php require 'Controller/ver/C_Ver_Usuario_Post.php';
-$image = $intancia->RutaLinks($escaped_link, "src/images/default.jpg");
-$form = $intancia->RutaLinks($escaped_link, "View/login/forms/portada.php")
-    //  $usuario = $user->getPost($id);
+$image = $intancia->RutaLinks($escaped_link, 'src/images/default.jpg');
+$form = $intancia->RutaLinks($escaped_link, 'View/login/forms/portada.php');
+
+//  $usuario = $user->getPost($id);
 //  var_dump($usuario)
-    ?>
+?>
 <div id='content-rigth' class='per p-2 w-100 d-flex align-items-center'>
     <?php if (isset($_SESSION['name']) && isset($_SESSION['name'])) { ?>
     <div class='container mt-4 mb-4 p-3 d-flex justify-content-center'>
         <div class='card p-4'>
             <div class=' image d-flex flex-column justify-content-center align-items-center'> <button
-                    class='btn btn-secondary'> <img src='<?php echo $image[0]['ruta'] ?>' height='100'
-                        width='100' /></button> <span class='name mt-3'>Eleanor Pena</span> <span
+                    class='btn btn-secondary'> <img src='<?php echo $image[0][
+                        'ruta'
+                    ]; ?>' height='100' width='100' /></button> <span class='name mt-3'>Eleanor Pena</span> <span
                     class='idd'>@eleanorpena</span>
                 <div class='d-flex flex-row justify-content-center align-items-center gap-2'> <span
                         class='idd1'>Oxc4c16a645_b21a</span> <span><i class='fa fa-copy'></i></span> </div>
@@ -40,8 +42,7 @@ $form = $intancia->RutaLinks($escaped_link, "View/login/forms/portada.php")
 </div>
 
 
-<?php
-if (isset($id)) {
+<?php if (isset($id)) {
     $usuario = $user->getPost($id);
     var_dump($usuaio);
 }
