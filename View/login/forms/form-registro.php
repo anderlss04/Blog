@@ -1,6 +1,9 @@
-<?php $var = $intancia->RutaLinks($escaped_link, "Controller/crear/C_Crear_Usuario.php" )  ?>
+<?php $var = $intancia->RutaLinks(
+    $escaped_link,
+    'Controller/crear/C_Crear_Usuario.php'
+); ?>
 
-<form action="<?php echo $var[0]['ruta'] ?> " method="POST">
+<form action="<?php echo $var[0]['ruta']; ?> " method="POST">
     <!--  Creación de una fila con dos columnas. La primera columna es para el nombre y la segunda
            columna es para el apellido. * -->
 
@@ -50,7 +53,7 @@
     </button>
 
     <div class="text-center">
-        
+
         <p class="font-weight-light">He olvidado mi Contraseña.<a href="recuperar.php">Recuperar Contraseña.</a><br>
             <a href="login.php">Ya tengo una Cuenta</a>
         </p>

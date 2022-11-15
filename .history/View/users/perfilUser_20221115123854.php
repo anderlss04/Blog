@@ -77,6 +77,7 @@ require $lin[0]['ruta'];
                 </div>
             </div>
 
+<<<<<<< HEAD
             <div class="tab-pane fade" id="publicar" role="tabpanel" aria-labelledby="publicar-tab">
                 <div class="publicar">
                     <div class="publicar-inner">
@@ -94,6 +95,8 @@ require $lin[0]['ruta'];
 
 
             
+=======
+>>>>>>> 20867a1398247b65f68aa17b34278a86b16ae3e6
 
 
 
