@@ -108,7 +108,9 @@ main {
 
 .boton {
     background-color: var(--color-jace-primary)!important;
-    color: var(--color-jace-fondo)!important;
+    color: white!important;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .boton:hover {
