@@ -1,5 +1,5 @@
 <?php foreach ($posts as $post) { ?>
-<div class="card mb-3 col-md-8 carta" id="<?php echo $post['userId'] ?>">
+<div class="card mb-3 col-md-8 carta" id="<?php echo $post['user_id'] ?>">
     <div class="row g-0 d-flex">
         
         <?php if (isset($post['image']) && $post['image'] != null) { ?>
