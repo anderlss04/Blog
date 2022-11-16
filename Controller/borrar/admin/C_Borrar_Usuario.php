@@ -2,12 +2,13 @@
 
 use Model\M_Usuario;
 
-require_once('../../Model/M_Usuario.php');
+require_once('../../../Model/M_Usuario.php');
 
 $con = new M_Usuario();
-if(isset($_GET['username']))
+var_dump($_GET['username']);
+if(isset($_GET['username'])&& $_GET['username']!= null)
 $con->deleteUsuario($_GET['username']);
-// header('Location: Admin');
+header('Location: ../../../Admin?dato=Usuarios');
 
 
 $con->close();
