@@ -1,13 +1,21 @@
 <link rel="stylesheet" href="css/home.css">
-<div class="row h-100 justify-content-center d-flex align-items-center">
+<?php
 
+require '../Controller/ver/C_verAdmin.php';
+$var = $intancia->RutaLinks(
+    $escaped_link,
+    'Controller/modificar/C_Modificar_Admin.php'
+);
+?>
+<div class="row h-100 justify-content-center d-flex align-items-center">
+    <!-- <button id="mostrar" class="boton esconder"> Mostrar</button> -->
     <div class=" col col-8  mb-3 ">
         <div class="col col-12 mb-5">
             <div class="card h-100 shadow p-3 mb-5 bg-white rounded ">
                 <div class="card-body">
                     <div class="content-body">
                         <div class="content-body-info col-12">
-                            <form action="" class="form-general">
+                        <form action="<?php echo $var[0]['ruta'] ?> " method="POST" class="text-center">
                                 <div class="from-item-group">
                                     <div class="from-item-group-content" id="emisor">
                                         <div class="from-row-tittle d-flex">
@@ -19,14 +27,12 @@
                                         </div>
                                         <div class="porfile-info d-flex w-100">
                                             <div class="porfile-info-content">
-                                                <div class="porfile-info-content-element col-12">
+                                                <div class="porfile-info-content-element col-12 text-center">
 
-                                                    <form action="<?php echo $var[0]['ruta'] ?> " method="POST"
-                                                        class="text-center">
-                                                        <!--  Creación de una fila con dos columnas. La primera columna es para el nombre y la segunda
-           columna es para el apellido. * -->
+                                                    
+                                                        
                                                         <div class="row">
-                                                            <div class="col-md-6 mb-4">
+                                                            <div class="col-md-6 col-xs-12  mb-4">
                                                                 <div class="form-outline">
                                                                     <input value="<?php echo $first_name; ?>"
                                                                         type="text" id="formNombre" name="first_name"
@@ -35,7 +41,7 @@
                                                                         for="formNombre">Nombre</label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-6 mb-4">
+                                                            <div class="col-md-6 col-xs-12  mb-4">
                                                                 <div class="form-outline">
                                                                     <input value="<?php echo $last_name; ?>" type="text"
                                                                         id="formApellido" name="last_name"
@@ -47,7 +53,7 @@
                                                         </div>
 
                                                         <div class="row">
-                                                            <div class="col-md-4 mb-4">
+                                                            <div class="col-md-4 col-xs-12  mb-4">
                                                                 <div class="form-outline">
                                                                     <input value="<?php echo $username; ?>" readonly
                                                                         type="text" id="formUserName" name="username"
@@ -56,7 +62,7 @@
                                                                         de Usuario</label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-8 mb-4">
+                                                            <div class="col-md-8  col-xs-12 mb-4">
                                                                 <div class="form-outline">
                                                                     <input value="<?php echo $email; ?>" type="email"
                                                                         id="formEmail" name="email"
@@ -71,7 +77,7 @@
 
                                                         <!-- /* El usuario ingresar una contraseña. */ -->
                                                         <div class="form-outline mb-4">
-                                                            <input value="<?php echo $password; ?>" type="password"
+                                                            <input value="<?php echo $password ?>" type="password"
                                                                 id="formPass" name="password" class="form-control" />
                                                             <label class="form-label" for="formPass">Contraseña</label>
                                                         </div>

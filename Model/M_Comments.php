@@ -52,7 +52,7 @@ class M_Comments extends Conexion{
             $post_id = $fila['id'];
         }
 
-        $query = parent::con()->query("SELECT * FROM comments WHERE postId = '$post_id'");
+        $query = parent::con()->query("SELECT * FROM comments WHERE post_Id = '$post_id'");
 
         $retorno = [];
 

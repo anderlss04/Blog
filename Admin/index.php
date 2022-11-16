@@ -1,3 +1,12 @@
+<?php 
+session_start();
+if(!isset($_SESSION['user'])){
+    header('Location: ../View/login/login.php?error=1');
+}else{
+    include '../View/components/user/ObtenerRuta.php';
+    include '../Controllers/RutasController.php'; 
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,16 +62,15 @@
             <hr>
             <div class="dropdown">
                 <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://github.com/mdo.png" alt="" class="rounded-circle me-2" width="32" height="32">
-                    <strong>mdo</strong>
+                    <img src="images/admin.jpg" alt="" class="rounded-circle me-2" width="32" height="32">
+                    <strong><?php echo $_SESSION['user'] ?></strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
 
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li>
+                    <!-- <li>
                         <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </li> -->
+                    <li><a class="dropdown-item" href="controller/salir.php">Salir </a></li>
                 </ul>
             </div>
         </div>
@@ -100,6 +108,8 @@
             </div>
         </div>
     </main>
+    <script src="js/campos.js"></script>
+
     <script src="js/main.js"></script>
 
 

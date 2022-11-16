@@ -1,8 +1,6 @@
 <?php
 $var = $intancia->RutaLinks($escaped_link, 'Controller/Login.php');
-// $var2 = $intancia->RutaLinks($escaped_link, '../Controller/Login.php');
-var_dump($escaped_link);
-var_dump($var);
+
 ?>
 <?php $enlace1 = $intancia->RutaLinks(
     $escaped_link,

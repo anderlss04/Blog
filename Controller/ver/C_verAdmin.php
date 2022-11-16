@@ -2,7 +2,7 @@
 
 use Model\M_Usuario;
 
-require_once('../../Model/M_Usuario.php');
+require_once('../Model/M_Usuario.php');
 
 $con = new M_Usuario();
 
@@ -22,5 +22,3 @@ $user_id = $usuario['id'];
 
 
 $con->close();
-
-// require_once('../View/users/user.php');

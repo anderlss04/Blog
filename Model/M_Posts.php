@@ -68,7 +68,7 @@ class M_Posts extends Conexion
     public function insertPost(Posts $post)
     {
         parent::con()->query(
-            "INSERT INTO posts (title, brief, content, image, created_at, status, userId) VALUES ('{$post->getTitle()}', '{$post->getBrief()}', '{$post->getContent()}', '{$post->getImage()}', '{$post->getCreated_at()}', '{$post->getStatus()}', '{$post->getUser_id()}')"
+            "INSERT INTO posts (title, brief, content, image, created_at, status, user_id) VALUES ('{$post->getTitle()}', '{$post->getBrief()}', '{$post->getContent()}', '{$post->getImage()}', '{$post->getCreated_at()}', '{$post->getStatus()}', '{$post->getUser_id()}')"
         );
 
     }

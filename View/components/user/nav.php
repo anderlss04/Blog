@@ -1,6 +1,6 @@
 <nav id="navbar-header" class="navbar navbar-expand-lg navbar-light   px-5">
     <div class="container-fluid title-container">
-        <a class="" href="#">JAse</a>
+        <a class="" href="#"><img src="src/images/jase-palabra.png" alt="" class="img-fluid" width="75px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

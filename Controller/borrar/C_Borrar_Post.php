@@ -6,10 +6,10 @@ require_once('../Model/M_Posts.php');
 
 $con = new M_Posts();
 
-$con->deletePost($_POST['id']);
+$con->deletePost($_GET['id']);
 
 $con->close();
 
-header('Location: ../Controller/ver/C_Ver_Posts.php');
+header('Location: ../../Admin/?dato=Publicaciones&?data=1');
 
 ?>
