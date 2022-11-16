@@ -47,7 +47,7 @@ class M_Posts extends Conexion
         $query = parent::con()->query(
             "SELECT * FROM users WHERE username = '$user'"
         );
-
+        $user_id;
         while ($fila = $query->fetch_assoc()) {
             $user_id = $fila['id'];
         }
