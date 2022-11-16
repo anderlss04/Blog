@@ -7,7 +7,7 @@ class C_Ver_Usuario_Post extends Conexion
     public function getPost($idPost)
     {
         $query = parent::con()->query(
-            "SELECT users.username, users.email FROM users INNER JOIN posts ON users.id= posts.userId  WHERE posts.userId = '$idPost'"
+            "SELECT users.username, users.email FROM users INNER JOIN posts ON users.id= posts.userId  WHERE posts.user_id = '$idPost'"
         );
 
         $fila = $query->fetch_array();

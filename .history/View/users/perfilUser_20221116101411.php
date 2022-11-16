@@ -125,7 +125,5 @@ require $lin[0]['ruta'];
         window.location.href = "../../Controller/Logout.php";
     });
 
-    document.getElementById("volver-tab").addEventListener("click", function() {
-        window.location.href = "../../index.php";
-    });
+    
 </script>

@@ -88,6 +88,7 @@ foreach ($posts as $post) { ?>
 
 
     </div>
+<<<<<<< HEAD
 </div>
 <div class="modal fade" id="ComentModal<?php echo $post[
     'id'
@@ -129,3 +130,6 @@ foreach ($posts as $post) { ?>
     </div>
 </div>
 <?php } ?>
+=======
+<?php } ?>
+>>>>>>> 6ee3631660d3d20f27340d29c291d072b480f1e6

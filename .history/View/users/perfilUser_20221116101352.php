@@ -52,7 +52,7 @@ require $lin[0]['ruta'];
                     <button class="nav-link" id="publicar-tab" data-bs-toggle="tab" data-bs-target="#publicar" type="button" role="tab" aria-controls="publicar" aria-selected="false">Publicar</button>
                 </li>
                 <li>
-                    <button class="nav-link" id="volver-tab" data-bs-toggle="tab" data-bs-target="#volver" type="button" role="tab" aria-controls="modificar" aria-selected="false">Volver</button>
+                    <button class="nav-link" id="volver-tab" data-bs-toggle="tab" data-bs-target="#volver" type="button" role="tab" aria-controls="modificar" aria-selected="false">Modificar</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="logout-tab" data-bs-toggle="tab" data-bs-target="#logout" type="button" role="tab" aria-controls="logout" aria-selected="false">Logout</button>
@@ -123,9 +123,5 @@ require $lin[0]['ruta'];
 <script>
     document.getElementById("logout-tab").addEventListener("click", function() {
         window.location.href = "../../Controller/Logout.php";
-    });
-
-    document.getElementById("volver-tab").addEventListener("click", function() {
-        window.location.href = "../../index.php";
     });
 </script>

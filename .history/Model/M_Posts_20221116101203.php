@@ -25,7 +25,7 @@ class M_Posts extends Conexion
     {
         $query = parent::con()->query("SELECT users.username, users.email
             FROM users
-            INNER JOIN posts ON users.id= posts.userId  WHERE posts.userId = $idPost;
+            INNER JOIN posts ON users.id= posts.user_id  WHERE posts.userId = $idPost;
             ");
 
         $fila = $query->fetch_array();

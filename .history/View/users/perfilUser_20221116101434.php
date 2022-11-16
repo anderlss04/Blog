@@ -126,6 +126,6 @@ require $lin[0]['ruta'];
     });
 
     document.getElementById("volver-tab").addEventListener("click", function() {
-        window.location.href = "../../index.php";
+        window.location.href = "../../";
     });
 </script>
