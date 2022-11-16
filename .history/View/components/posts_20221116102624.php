@@ -63,22 +63,15 @@ foreach ($posts as $post) { ?>
                                         </p>
                                     </small>
                                 </div>
-                                <div id="crearComment">
-                                    <form action="Controller/crear/C_Crear_Comments.php" method="POST">
-                                        <div class="form-group
-                                            <label for="exampleFormControlTextarea1">Comentar</label>
-                                            <textarea class="form-control" name="comment" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            <input type="hidden" name="post_id" value="<?php echo $post['id']; ?>">
-                                            <input type="hidden" name="name" value="<?php echo $_SESSION['user']; ?>">
-                                        </div>
+                                <div id="crearComment>
+
                                 </div>
                                 <?php if (isset($_SESSION['user'])) { ?>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="submit" class="btn btn-primary">Comentar</button>
+                                        <a type="button" href="<?php echo $rutaDel[0]['ruta'] . '?id=' . $post['id'] ?> " class="btn btn-primary" data-bs-target="crearComment">Comentarios</a>
                                     </div>
                                 <?php } ?>
-                                </form>
                             </div>
                         </div>
                     <?php } else {

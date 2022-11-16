@@ -64,7 +64,7 @@ foreach ($posts as $post) { ?>
                                     </small>
                                 </div>
                                 <div id="crearComment">
-                                    <form action="Controller/crear/C_Crear_Comments.php" method="POST">
+                                    <form action="../../Controller/crear/C_Crear_Comment.php" method="POST">
                                         <div class="form-group
                                             <label for="exampleFormControlTextarea1">Comentar</label>
                                             <textarea class="form-control" name="comment" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -75,7 +75,7 @@ foreach ($posts as $post) { ?>
                                 <?php if (isset($_SESSION['user'])) { ?>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="submit" class="btn btn-primary">Comentar</button>
+                                        n
                                     </div>
                                 <?php } ?>
                                 </form>
