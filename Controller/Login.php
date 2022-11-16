@@ -13,6 +13,8 @@ if ($mysqli->connect_errno) {
 
 $sql = "SELECT * FROM users WHERE username = '$user' AND password = '$pass'";
 $result = mysqli_query($conn, $sql);
+$row= $result->fetch_array();
+$rol = $row['rol'];
 
 if (mysqli_num_rows($result) > 0) {
     session_start();
@@ -21,11 +23,11 @@ if (mysqli_num_rows($result) > 0) {
     $sql = "UPDATE users SET last_login = NOW() WHERE username = '$user'";
     $result = mysqli_query($conn, $sql);
 
-    // print_r("Bienvenido - " . $user);
-    header('Location: ../View/users/perfilUser.php?username=' . $user);
-    print_r('error usuario o contraseña ');
+$rol == 1 ? header('Location:../Admin?username='.$user ):
+     header('Location: ../View/users/perfilUser.php?username=' . $user);
+    // print_r('error usuario o contraseña ');
 } else {
     header('Location: ../View/login/login.php?error=1');
-    print_r('error usuario o contraseña ');
+    // print_r('error usuario o contraseña ');
 }
 ?>

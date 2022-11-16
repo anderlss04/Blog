@@ -13,18 +13,6 @@
 
 <body>
 
-<!-- <?php
-//echo gettype($_GET["data"])
-?> -->
-
-    <?php
-// $datos = unserialize($_GET["data"]);
-//   var_dump($datos);
-//   foreach($datos as $dato){
-//     echo $dato["username"];
-//     echo $dato["email"];
-//   }
-?>
     <header>
         <?php require '../components/cabecera.php'; ?>
     </header>

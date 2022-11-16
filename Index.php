@@ -1,5 +1,17 @@
-<?php require 'view/components/header.php' ?>
-<?php require 'Controllers/RutasController.php'; 
+<?php 
+require 'view/components/header.php';
+require 'Controllers/RutasController.php'; 
+
+session_start();
+if(isset($_SESSION['user'])){
+    $valor = $intancia->rutaLinks($escaped_link, 'View/users/datosPortal.php');
+   
+    
+}
+?>
+
+
+<?php 
 $valor = $intancia->rutaLinks($escaped_link, '');
 include $valor[0]['script'];
 ?>

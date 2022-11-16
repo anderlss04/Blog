@@ -2,32 +2,66 @@
 $image = $intancia->RutaLinks($escaped_link, 'src/images/default.jpg');
 $form = $intancia->RutaLinks($escaped_link, 'View/login/forms/portada.php');
 
-//  $usuario = $user->getPost($id);
-//  var_dump($usuario)
+$vista = $intancia->RutaLinks(
+    $escaped_link,
+    'View/users/perfilUser.php'
+);
+
 ?>
 <div id='content-rigth' class='per p-2 w-100 d-flex align-items-center'>
-    <?php if (isset($_SESSION['name']) && isset($_SESSION['name'])) { ?>
-    <div class='container mt-4 mb-4 p-3 d-flex justify-content-center'>
-        <div class='card p-4'>
-            <div class=' image d-flex flex-column justify-content-center align-items-center'> <button
-                    class='btn btn-secondary'> <img src='<?php echo $image[0][
-                        'ruta'
-                    ]; ?>' height='100' width='100' /></button> <span class='name mt-3'>Eleanor Pena</span> <span
-                    class='idd'>@eleanorpena</span>
-                <div class='d-flex flex-row justify-content-center align-items-center gap-2'> <span
-                        class='idd1'>Oxc4c16a645_b21a</span> <span><i class='fa fa-copy'></i></span> </div>
-                <div class='d-flex flex-row justify-content-center align-items-center mt-3'> <span class='number'>1069
-                        <span class='follow'>Followers</span></span> </div>
-                <div class=' d-flex mt-2'> <button class='btn1 btn-dark'>Edit Profile</button> </div>
-                <div class='text mt-3'> <span>Eleanor Pena is a creator of minimalistic x bold graphics and digital
-                        artwork.<br><br> Artist/ Creative Director by Day #NFT minting@ with FND night. </span> </div>
-                <div class='gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center'> <span><i
-                            class='fa fa-twitter'></i></span> <span><i class='fa fa-facebook-f'></i></span> <span><i
-                            class='fa fa-instagram'></i></span> <span><i class='fa fa-linkedin'></i></span> </div>
-                <div class=' px-2 rounded mt-4 date '> <span class='join'>Joined May,2021</span> </div>
-            </div>
-        </div>
-    </div>
+
+    <?php if (isset($_SESSION['user']) && isset($_SESSION['user'] )!= null) { ?>
+  <?php $var = $intancia->RutaLinks($escaped_link, 'Controller/ver/C_Ver_Usuario-log.php');
+include $var[0]['ruta'];
+?>
+
+<form class="form-slider text-center">
+<div class="img-fluid img-intro ">
+    <img src="src/images/prueba.jpg" alt="">
+</div>   
+<div class="card p-4 mx-3">
+     <div class="row">
+         <div class="col-md-12 mb-4">
+             <div class="form-outline">
+                 <input readonly value="<?php echo $username; ?>" type="text" id="formNombre" name="first_name" class="form-control" />
+                 <label class="form-label" for="formNombre">Nombre</label>
+             </div>
+         </div>
+         <div class="col-md-12 mb-4">
+             <div class="form-outline">
+                 <input readonly value="<?php echo $email; ?>" type="text" id="formApellido" name="last_name" class="form-control" />
+                 <label class="form-label" for="formApellido">Apellido</label>
+             </div>
+         </div>
+     </div>
+    
+     <div class="row">
+         <div class="col-md-4 mb-4">
+             <div class="form-outline">
+                 <input readonly value="<?php echo $username; ?>" readonly type="text" id="formUserName" name="username" class="form-control" />
+                 <label class="form-label" for="formUserName">Nombre de Usuario</label>
+             </div>
+         </div>
+         <div class="col-md-8 mb-4">
+             <div class="form-outline">
+                 <input readonly value="<?php echo $email; ?>" type="email" id="formEmail" name="email" class="form-control" />
+                 <label class="form-label" for="formEmail">Email </label>
+             </div>
+         </div>
+     </div>
+    
+    
+    
+    
+    
+     <!-- /* Botón de envío. */ -->
+     <a type="submit" href="<?php echo $vista[0]['ruta'] ?>" class="boton btn  btn-block mb-4">
+         ver
+     </a>
+   </div>
+
+    
+</form>
     <?php } else { ?>
     <div class='form-logs container  mb-4  d-flex justify-content-center'>
         <div class='card p-4 text-center'>
@@ -44,6 +78,5 @@ $form = $intancia->RutaLinks($escaped_link, 'View/login/forms/portada.php');
 
 <?php if (isset($id)) {
     $usuario = $user->getPost($id);
-    var_dump($usuaio);
 }
 ?>

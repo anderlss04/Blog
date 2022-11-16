@@ -6,17 +6,20 @@ require_once 'Conexion.php';
 
 class M_Usuario extends Conexion{
 
-    public function View($url , $array){
-        var_dump($array);
-        $data= serialize($array);
-        var_dump($data);
-
-         header("Location:". $url ."?data=".$data, true);
-        //  header("Location:". $url ."?data=".$data);
-     
-     }
+   
     public function getUsers(){
-        $query = parent::con()->query('SELECT * FROM users');
+        $query = parent::con()->query('SELECT * FROM users WHERE rol != "1"');
+        
+        $retorno = [];
+        
+        while($fila = $query->fetch_assoc()){
+            $retorno[] = $fila;
+        }
+        
+        return  $retorno;
+    }
+    public function getAdmins(){
+        $query = parent::con()->query('SELECT * FROM users WHERE rol = "1"');
         
         $retorno = [];
         
