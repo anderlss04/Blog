@@ -62,12 +62,11 @@ foreach ($posts as $post) { ?>
                                 </p>
                             </small>
                         </div>
-                        <?php  if(isset($_SESSION['user']) ){ ?>
+                        <?php session_start(); if(isset( $_SESSION('user'))) ?>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                             <a type="button" href="<?php echo $rutaDel[0]['ruta'] . '?id=' . $post['id'] ?> " class="btn btn-primary">Comentarios</a>
                         </div>
-                        <?php } ?>
                     </div>
                 </div>
             <?php }else{

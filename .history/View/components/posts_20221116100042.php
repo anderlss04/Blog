@@ -37,7 +37,7 @@ foreach ($posts as $post) { ?>
         <div class="modal fade" id="ComentModal<?php echo $post['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             
         <?php require 'Controller/ver/C_Ver_Comments_Post.php'; foreach ($comments as $comment) { ?>
-            <?php if (isset($comment)) { ?>
+            <?php if (!empty($comment)) { ?>
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -62,18 +62,17 @@ foreach ($posts as $post) { ?>
                                 </p>
                             </small>
                         </div>
-                        <?php  if(isset($_SESSION['user']) ){ ?>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                             <a type="button" href="<?php echo $rutaDel[0]['ruta'] . '?id=' . $post['id'] ?> " class="btn btn-primary">Comentarios</a>
                         </div>
-                        <?php } ?>
                     </div>
                 </div>
             <?php }else{
                 echo "No hay comentarios";?>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <?php }} ?>
+            <?}
+            }} ?>
         </div>
 
 
