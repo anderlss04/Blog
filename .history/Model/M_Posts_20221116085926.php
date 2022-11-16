@@ -48,6 +48,8 @@ class M_Posts extends Conexion
             "SELECT * FROM users WHERE username = '$user'"
         );
 
+        $user_id;
+        
         while ($fila = $query->fetch_assoc()) {
             $user_id = $fila['id'];
         }
