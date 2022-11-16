@@ -36,7 +36,7 @@ foreach ($posts as $post) { ?>
 
         <div class="modal fade" id="ComentModal<?php echo $post['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             
-        <?php require 'Controller/ver/C_Ver_Comments_Post.php'; foreach ($comments as $comment) { ?>
+        <?phprequire 'Controller/ver/C_Ver_Comments_Post.php'; foreach ($comments as $comment) { ?>
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">

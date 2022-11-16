@@ -7,7 +7,7 @@ $con = new M_Comments();
 
 // session_start();
 
-$comments = $con->getCommentsPost($post['title']);
+$comments = $con->getCommentsPost($posts['title']);
 
 // $con->close();  
 
