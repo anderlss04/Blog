@@ -28,7 +28,7 @@ foreach ($posts as $post) { ?>
                <button href="" type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#UserModal<?php echo $post['id'] ?>"> <i class="fa-solid fa-user"></i></button>
 
-               <button id="botonComments<?php  ?>" href="?title=<?php echo $post['title'] ?>" type="button" class="btn btn-primary" data-bs-toggle="modal"
+               <button id="botonComments<?php ?>" href="?title=<?php echo $post['title'] ?>" type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#ComentModal<?php echo $post['id'] ?>"> <i class="fa-solid fa-comment"></i></button>
                 </small>
             </div>

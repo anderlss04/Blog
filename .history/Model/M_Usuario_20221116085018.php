@@ -8,7 +8,7 @@ class M_Usuario extends Conexion{
 
    
     public function getUsers(){
-        $query = parent::con()->query('SELECT * FROM users WHERE rol != "1" and active = "0"');
+        $query = parent::con()->query('SELECT * FROM users WHERE rol = "0"');
         
         $retorno = [];
         
@@ -19,7 +19,7 @@ class M_Usuario extends Conexion{
         return  $retorno;
     }
     public function getAdmins(){
-        $query = parent::con()->query('SELECT * FROM users WHERE rol = "1" and active = "0"');
+        $query = parent::con()->query('SELECT * FROM users WHERE rol = "1"');
         
         $retorno = [];
         

@@ -15,7 +15,7 @@ $vista = $intancia->RutaLinks(
         include $var[0]['ruta'];
         ?>
 
-        <form id="form-entrar" class="form-slider text-center">
+        <form class="form-slider text-center">
             <div class="img-fluid img-intro ">
                 <img src="src/images/prueba.jpg" alt="">
             </div>

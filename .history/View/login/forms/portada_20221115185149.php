@@ -6,7 +6,7 @@ $var = $intancia->RutaLinks($escaped_link, 'Controller/Login.php');
     $escaped_link,
     'View/login/recuperar.php'
 ); ?>
-<?php $enlace2 = $intancia->RutaLinks($escaped_link, 'View/login/recuperar.php'); ?>
+<?php $enlace2 = $intancia->RutaLinks($escaped_link, 'login/recuperar.php'); ?>
 
 <form action="<?php echo $var[0]['ruta']; ?> " method="POST">
 
