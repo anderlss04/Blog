@@ -1,13 +1,13 @@
 <?php
 
 use Model\M_Comments;
-require_once('Model/M_Comments.php');
+require_once('../../Model/M_Comments.php');
 
 $con = new M_Comments();
 
 // session_start();
 
-$comments = $con->getCommentsPost($post['title']);
+$comments = $con->getCommentsPost($p['title']);
 
 // $con->close();  
 

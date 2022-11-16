@@ -28,7 +28,7 @@ class M_Comments extends Conexion{
     }
 
     public function getCommentsUser($user){
-        $query = parent::con()->query("SELECT * FROM users WHERE username = '$user' and status = '0'");
+        $query = parent::con()->query("SELECT * FROM users WHERE username = '$user' and sta");
 
         while($fila = $query->fetch_assoc()){
             $username = $fila['username'];
@@ -46,7 +46,7 @@ class M_Comments extends Conexion{
     }
 
     public function getCommentsPost($post){
-        $query = parent::con()->query("SELECT * FROM posts WHERE title = '$post' and status = '0'");
+        $query = parent::con()->query("SELECT * FROM posts WHERE title = '$post'");
 
         while($fila = $query->fetch_assoc()){
             $post_id = $fila['id'];

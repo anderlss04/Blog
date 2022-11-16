@@ -27,7 +27,7 @@ $var = $intancia->RutaLinks($escaped_link, 'Controller/Login.php');
     <div class="text-center">
         <!-- <p class="font-weight-light">He olvidado mi Contraseña.<a href=" <?php// echo $enlace1[0][
            // 'ruta'
-        //]; ?>">Recuperar Contraseña.</a><br> -->
+        ]; ?>">Recuperar Contraseña.</a><br> -->
             <a href="<?php echo $enlace2[0]['ruta']; ?>">Registrarme</a>
         </p>
     </div>
