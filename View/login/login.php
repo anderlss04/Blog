@@ -1,4 +1,6 @@
 <?php
+
+
 include '../components/user/ObtenerRuta.php';
 require '../../Controllers/RutasController.php';
 
