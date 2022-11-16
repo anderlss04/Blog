@@ -47,7 +47,7 @@ class M_Posts extends Conexion
         $query = parent::con()->query(
             "SELECT * FROM users WHERE username = '$user'"
         );
-
+        $user_id;
         while ($fila = $query->fetch_assoc()) {
             $user_id = $fila['id'];
         }
@@ -70,7 +70,6 @@ class M_Posts extends Conexion
         parent::con()->query(
             "INSERT INTO posts (title, brief, content, image, created_at, status, user_id) VALUES ('{$post->getTitle()}', '{$post->getBrief()}', '{$post->getContent()}', '{$post->getImage()}', '{$post->getCreated_at()}', '{$post->getStatus()}', '{$post->getUser_id()}')"
         );
-
     }
 
     public function deletePost($id)
