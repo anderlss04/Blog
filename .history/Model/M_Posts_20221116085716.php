@@ -77,7 +77,7 @@ class M_Posts extends Conexion
     {
         $sentencia = parent::con()->prepare('UPDATE posts SET status = 1 WHERE id = ?');
 
-        $sentencia->bind_param('s', $id);
+        $sentencia->bind_param('s', $title);
 
         $sentencia->execute();
         $sentencia->close();
